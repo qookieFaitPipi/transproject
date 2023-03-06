@@ -1,0 +1,40 @@
+.tools {
+  position: relative;
+  margin-bottom: 40px;
+
+  .toolsContent {
+    max-width: 1300px;
+    margin: auto;
+
+    .toolItem {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 40px;
+  
+      .toolImageBlock {
+        display: block;
+  
+        .toolImage {
+          width: 570px;
+          height: 300px;
+          margin-top: 20px;
+        }
+      }
+  
+      .toolTextBlock {
+  
+        .toolTitle {
+          margin: 0px 0px 0px 0px;
+          text-align: center;
+        }
+        .toolDescription {
+          text-align: justify;
+          margin: 10px 25px 0px 25px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,33 @@
+.partners {
+  margin-top: 70px;
+
+  .partnersContent {
+    max-width: 1300px;
+    margin: auto;
+
+    .partnersTitle {
+      text-align: center;
+      font-size: 27px;
+    }
+    .partnersLine {
+      display: flex;
+      justify-content: space-around;
+
+      .partnersItem {
+        width: 400px;
+        height: 200px;
+        text-align: center;
+
+        .partnersItemText {
+          font-size: 12px;
+        }
+        .partnersItemTextH {
+          font-family: 'Sacramento', cursive;
+          font-size: 28px;
+          text-align: center;
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+}

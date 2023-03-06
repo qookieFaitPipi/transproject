@@ -1,0 +1,44 @@
+.workers {
+  display: block;
+
+  .workersContent {
+    max-width: 1300px;
+    margin: auto;
+
+    .workersTitle {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    .workersItem {
+      display: flex;
+      margin-top: 60px;
+      margin-bottom: 60px;
+
+      .workersItemImageBlock {
+        display: block;
+
+        .workersItemImage {
+          margin-right: 40px;
+          height: 500px;
+          width: 400px;
+        }
+      }
+
+      .workersItemInfo {
+        display: block;
+
+        .workersItemInfoTitle {
+          font-weight: 400;
+          font-size: 26px;
+        }
+        .workersItemInfoSupTitle {
+          font-size: 22px;
+        }
+        .workersItemInfoText {
+          display: block;
+        }
+      }
+    }
+  }
+}
