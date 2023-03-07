@@ -29,11 +29,11 @@ const Header = () => {
           </li>
 
           <li className={styles.navItem}>
-            <a className={styles.navLink} href="">Вакансии</a>
+            <Link className={styles.navLink} to="/vacancy">Вакансии</Link>
           </li>
 
           <li className={styles.navItem}>
-            <a className={styles.navLink} href="">Контакты</a>
+            <Link className={styles.navLink} to="/contacts">Контакты</Link>
           </li>
 
         </div>

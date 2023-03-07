@@ -4,8 +4,8 @@ import styles from './Object.module.scss';
 const Object = (props) => {
   return(
     <div className={styles.object}>
-      <h4>{props.title}</h4>
-      <p>{props.text}</p>
+      <h4 className={styles.objectTitle}>{props.title}</h4>
+      <p className={styles.objectText}>{props.text}</p>
     </div>
   );
 }

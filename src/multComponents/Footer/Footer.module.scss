@@ -57,3 +57,35 @@
     text-align: center;
   }
 }
+
+@media (max-width: 767px) {
+  .footer {
+    display: block;
+
+    .footerContent {
+      display: block;
+
+      .footerContainer {
+        flex-direction: column;
+        margin: 20px !important;
+
+        .footerColumn {
+          display: flex;
+          justify-content: center;
+
+          .footerColumnTitle {
+            display: flex;
+            justify-content: center;
+          }
+          .footerColumnAbout {
+            text-align: center;
+
+            .footerColumnAboutItem {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

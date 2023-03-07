@@ -16,4 +16,25 @@
     margin: 0 auto;
     padding-bottom: 70px;
   }
+  .quickMessage {
+    position: relative;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullPageWall {
+    display: block;
+
+    .fullPageTitle {
+      padding-top: 250px;
+      font-size: 25px;
+      margin: 0 auto;
+      padding-bottom: 30px;
+    }
+
+    .quickMessage {
+      font-size: 12px;
+      margin-bottom: 30px;
+    }
+  }
 }

@@ -37,3 +37,41 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .header {
+    display: block;
+
+    .headerContent {
+      flex-direction: column;
+
+      .headerLogoBlock {
+        justify-content: center;
+
+        .logo {
+          width: 40px;
+          height: 40px;
+          margin: 5px;
+        }
+        .logoTitle {
+          font-size: 14px;
+          margin: 5px;
+        }
+      }
+
+      .headerNavBlock {
+        display: flex;
+
+        .navItem {
+          margin: 5px;
+
+          .navLink {
+            text-decoration: none;
+            color: #000;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  } 
+}

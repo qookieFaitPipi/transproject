@@ -6,6 +6,9 @@ import {Link} from "react-router-dom";
 // images
 import logo from './../../assets/img/logo.svg';
 
+// files
+import fl1 from './../../assets/files/СОУТ_таблица 1.pdf';
+import fl2 from './../../assets/files/СОУТ_перечень мероприятий.pdf';
 const Footer = () => {
   return(
     <div className={styles.footer}>
@@ -28,13 +31,13 @@ const Footer = () => {
             <Link className={styles.footerColumnItem} to="/">О компании</Link>
             <Link className={styles.footerColumnItem} to="/news">Новости</Link>
             <Link className={styles.footerColumnItem} to="/objects">Объекты</Link>
-            <a className={styles.footerColumnItem} href="">Вакансии</a>
-            <a className={styles.footerColumnItem} href="">Контакты</a>
+            <Link className={styles.footerColumnItem} to="/vacancy">Вакансии</Link>
+            <Link className={styles.footerColumnItem} to="/contacts">Контакты</Link>
           </div>
           <div className={styles.footerColumn}>
             <h6 className={styles.footerName}>СОУТ</h6>
-            <a className={styles.footerColumnItem} href="">Сводная ведомость результатов проведения СОУТ</a>
-            <a className={styles.footerColumnItem} href="">Перечень мероприятий</a>
+            <a className={styles.footerColumnItem} href={fl1}>Сводная ведомость результатов проведения СОУТ</a>
+            <a className={styles.footerColumnItem} href={fl2}>Перечень мероприятий</a>
           </div>
 
         </div>

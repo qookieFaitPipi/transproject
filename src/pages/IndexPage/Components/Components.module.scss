@@ -23,3 +23,20 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .components {
+    display: block;
+
+    .componentsContent {
+      display: block;
+
+      .componentsTitle {
+        font-size: 21px;
+      }
+      .componentsItem {
+        margin: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.location {
+  position: relative;
+  left: 3px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  .locationContent {
+    display: flex;
+    justify-content: center;
+  }
+}

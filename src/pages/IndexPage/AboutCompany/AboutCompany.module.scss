@@ -6,3 +6,11 @@
     text-align: center;
   }
 }
+
+@media (max-width: 767px) {
+  .aboutCompany {
+      position: relative;
+      text-align: justify;
+      margin: 10px;
+  }
+}

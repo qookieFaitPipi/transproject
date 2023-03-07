@@ -25,6 +25,7 @@
       .toolTextBlock {
   
         .toolTitle {
+          font-size: 20px;
           margin: 0px 0px 0px 0px;
           text-align: center;
         }
@@ -36,5 +37,35 @@
       }
     }
   }
+}
 
+@media (max-width: 767px) {
+  .tools {
+    display: block;
+
+    .toolsContent {
+      display: block;
+
+      .toolItem {
+        text-align: justify;
+        flex-direction: column;
+
+        .toolImageBlock {
+          order: 1;
+
+          .toolImage {
+            width: 100%;
+
+          }
+        }
+        .toolTextBlock {
+          display: block;
+
+          .toolTitle {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
 }

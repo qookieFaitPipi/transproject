@@ -28,3 +28,24 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .newsItem {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+
+    .newsItemTextBlock {
+      order: 1;
+    }
+
+    .newsItemImageBlock {
+      display: block;
+
+      .newsItemImage {
+        width: 100%;
+      }
+    }
+  }
+}

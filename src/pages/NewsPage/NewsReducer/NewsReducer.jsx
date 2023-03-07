@@ -3,6 +3,7 @@ import styles from './NewsReducer.module.scss';
 
 import SmallNews from "./SmallNews/SmallNews";
 import LargeNews from "./LargeNews/LargeNews";
+
 // images
 import nw1 from './../../../assets/img/news/nw1.jpg';
 import nw2 from './../../../assets/img/news/nw2.png';
@@ -54,7 +55,7 @@ const NewsReducer = () => {
       size: 2,
     },
     {
-      id: 2,
+      id: 4,
       picture : nw3,
       date: '16.10.2022', 
       title: '',
@@ -64,7 +65,7 @@ const NewsReducer = () => {
       size: 1,
     },
     {
-      id: 2,
+      id: 5,
       picture : nw2,
       date: '23.09.2022', 
       title: '',
@@ -74,9 +75,9 @@ const NewsReducer = () => {
       size: 1,
     },
     {
-      id: 2,
+      id: 6,
       picture : nw1,
-      date: '05.06.2022', 
+      date: '<05.06.2022', 
       title: 'Поздравляем с профессиональным праздником сотрудников группы инженерной экологии!',
       text: 'Ежегодно, 5 июня, отмечается Всемирный день окружающей среды. День эколога — профессиональный праздник всех российских защитников природы, специалистов по охране окружающей среды, общественных деятелей и экологов-активистов. «День эколога» в России был учрежден Указом Президента РФ Владимира Путина 21 июля 2007 года по инициативе Комитета по экологии Государственной думы РФ.',
       link: '',
