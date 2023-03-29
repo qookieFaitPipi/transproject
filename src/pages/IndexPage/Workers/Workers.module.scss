@@ -1,0 +1,95 @@
+.workers {
+  display: block;
+
+  .workersContent {
+    max-width: 1300px;
+    margin: auto;
+
+    .workersTitle {
+      font-size: 25px;
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    .workersItem {
+      display: flex;
+      margin-top: 60px;
+      margin-bottom: 60px;
+
+      .workersItemImageBlock {
+        display: block;
+
+        .workersItemImage {
+          margin-right: 40px;
+          height: 430px;
+          width: 290px;
+        }
+      }
+
+      .workersItemInfo {
+        display: block;
+
+        .workersItemInfoTitle {
+          font-weight: 400;
+          font-size: 22px;
+        }
+        .workersItemInfoSupTitle {
+          font-size: 18px;
+        }
+        .workersItemInfoText {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .workers {
+    display: block;
+
+    .workersContent {
+      display: block;
+
+      .workersTitle {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+        font-size: 21px;
+      }
+      .workersItem {
+        flex-direction: column;
+        margin-top: 20px;
+
+        .workersItemImageBlock {
+          display: flex;
+          justify-content: center;
+
+          .workersItemImage {
+            width: 90%;
+            margin: 0 auto;
+          }
+        }
+
+        .workersItemInfo {
+          order: 1;
+
+          .workersItemInfoTitle {
+            text-align: center;
+            margin-top: 5px;
+            font-size: 20px;
+            margin: 10px;
+
+          }
+          .workersItemInfoSupTitle {
+            text-align: center;
+          }
+          .workersItemInfoText {
+            text-align: justify;
+            margin: 10px;
+          }
+        }
+      }
+    }
+  }
+}

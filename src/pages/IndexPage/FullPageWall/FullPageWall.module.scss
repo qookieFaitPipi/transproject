@@ -1,0 +1,41 @@
+.fullPageWall {
+  position: relative;
+  height: 100vh;
+  background: url('../../../assets/img/fullpage.jpg') no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: #3b3b3b;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+
+  .fullPageTitle {
+    padding-top: 250px;
+    font-size: 45px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+  }
+  .quickMessage {
+    position: relative;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullPageWall {
+    display: block;
+    height: 580px;
+
+    .fullPageTitle {
+      padding-top: 250px;
+      font-size: 25px;
+      margin: 0 auto;
+      padding-bottom: 30px;
+    }
+
+    .quickMessage {
+      font-size: 12px;
+      margin-bottom: 30px;
+    }
+  }
+}

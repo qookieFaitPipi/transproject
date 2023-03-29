@@ -1,0 +1,42 @@
+.components {
+  margin-top: 70px;
+
+  .componentsContent {
+    max-width: 1300px;
+    margin: auto;
+
+    .componentsTitle {
+      text-align: center;
+    }
+    .componentsItem {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+
+      .componentsImage {
+        width: 100px;
+        height: 100px;
+      }
+      .componentsText {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .components {
+    display: block;
+
+    .componentsContent {
+      display: block;
+
+      .componentsTitle {
+        font-size: 21px;
+      }
+      .componentsItem {
+        margin: 10px;
+      }
+    }
+  }
+}

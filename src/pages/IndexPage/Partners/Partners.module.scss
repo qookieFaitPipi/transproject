@@ -1,0 +1,62 @@
+.partners {
+  margin-top: 70px;
+
+  .partnersContent {
+    max-width: 1300px;
+    margin: auto;
+
+    .partnersTitle {
+      text-align: center;
+      font-size: 25px;
+    }
+    .partnersLine {
+      display: flex;
+      justify-content: space-around;
+
+      .partnersItem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 400px;
+        height: 200px;
+        text-align: center;
+
+
+        .partnersItemText {
+          font-size: 12px;
+        }
+        .partnersItemTextH {
+          font-family: 'Sacramento', cursive;
+          font-size: 28px;
+          text-align: center;
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .partners {
+    display: block;
+
+    .partnersContent {
+      display: block;
+
+      .partnersTitle {
+        font-size: 21px;
+      }
+      .partnersLine {
+        flex-direction: column;
+
+        .partnersItem {
+          width: auto;
+          height: auto;
+          text-align: center;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}

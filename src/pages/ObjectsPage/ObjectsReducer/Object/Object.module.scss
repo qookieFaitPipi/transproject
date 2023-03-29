@@ -1,0 +1,17 @@
+.object {
+  display: block;
+
+  .objectTitle {
+    margin: 10px;
+    margin-top: 40px;
+  }
+  .objectText {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .object {
+    margin: 20px;
+  }
+}
