@@ -14,8 +14,9 @@ import pt8 from './../../../assets/img/partners/pt8.jpg';
 const Partners = () => {
   return(
     <div className={styles.partners} id='scrollPartners'>
+      <h4 className={styles.partnersTitle}>Наши заказчики</h4>
+
       <div className={styles.partnersContent}>
-        <h4 className={styles.partnersTitle}>Наши заказчики</h4>
 
         <div className={styles.partnersLine}>
           <div className={styles.partnersItem}>

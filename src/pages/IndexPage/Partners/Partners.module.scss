@@ -1,13 +1,17 @@
 .partners {
   margin-top: 70px;
+  text-align: center;
 
   .partnersContent {
-    max-width: 1300px;
+    display: flex;
+    max-width: 95%;
     margin: auto;
+    overflow-x: auto !important;
 
     .partnersTitle {
       text-align: center;
       font-size: 25px;
+      margin-bottom: 20px;
     }
     .partnersLine {
       display: flex;

@@ -15,7 +15,6 @@ const FullPageWall = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      console.log('This will run every second!');
       setMessage(array[i]);
       i++;
       if(i == array.length) {

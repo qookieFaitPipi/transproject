@@ -3,36 +3,37 @@
   margin-bottom: 40px;
 
   .toolsContent {
-    max-width: 1300px;
-    margin: auto;
 
     .toolItem {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      justify-content: space-around;
       margin-top: 40px;
   
       .toolImageBlock {
-        display: block;
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 30px;
   
         .toolImage {
-          width: 470px;
-          height: 300px;
-          margin-top: 20px;
+          width: 658px;
+          height: 405px;
         }
       }
   
       .toolTextBlock {
-  
+        margin-top: 30px;
+        max-width: 95%;
+        width: 50%;
+        
         .toolTitle {
-          font-size: 20px;
-          margin: 0px 0px 0px 0px;
-          text-align: center;
+          font-size: 28px;
+          text-align: start;
         }
         .toolDescription {
-          text-align: justify;
-          margin: 10px 25px 0px 25px;
-          font-size: 14px;
+          text-align: start;
+          font-size: 15px;
+          margin-top: 10px;
+          font-weight: 300;
         }
       }
     }

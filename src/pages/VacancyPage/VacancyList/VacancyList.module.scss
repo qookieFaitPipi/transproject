@@ -2,12 +2,12 @@
   margin-top: 30px;
 
   .vacancyListContent {
-    max-width: 1200px;
+    max-width: 95%;
     margin: auto;
 
     .vacancyListItem {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       margin-top: 35px;
 
       .vacancyPrice {
@@ -17,9 +17,9 @@
         .vacancyPriceText {
           border: 2px solid #000000;
           margin: 5px;
-          padding: 5px;
           white-space: nowrap;
-          text-align: center;
+          padding: 20px;
+
         }
         .vacancyPriceInfo {
           text-align: center;
@@ -28,6 +28,7 @@
       .vacancyInfo {
         display: flex;
         flex-direction: column;
+        width: 60%;
 
         .vacancyTitle {
           position: relative;

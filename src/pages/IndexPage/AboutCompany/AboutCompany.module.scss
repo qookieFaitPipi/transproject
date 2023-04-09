@@ -1,9 +1,12 @@
 .aboutCompany {
   position: relative;
-  margin: 50px;
-
+  max-width: 95%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
   .aboutCompanyText {
-    text-align: center;
+    
   }
 }
 

@@ -9,14 +9,17 @@
       .headerLogoBlock {
         display: flex;
         align-items: center;
-  
+        margin-right: 40px;
+
         .logo {
-          width: 90px;
-          height: 90px;
+          width: 68px;
+          height: 68px;
           margin: 10px;
         }
         .logoTitle {
           font-size: 20px;
+          font-weight: 600;
+
         }
       }
       .headerNavBlock {

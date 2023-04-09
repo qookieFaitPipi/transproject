@@ -2,7 +2,7 @@
   display: block;
 
   .workersContent {
-    max-width: 1300px;
+    max-width: 95%;
     margin: auto;
 
     .workersTitle {
@@ -13,16 +13,17 @@
     }
     .workersItem {
       display: flex;
+      justify-content: space-around;
       margin-top: 60px;
       margin-bottom: 60px;
 
       .workersItemImageBlock {
         display: block;
 
+
         .workersItemImage {
-          margin-right: 40px;
-          height: 430px;
-          width: 290px;
+          height: 559px;
+          width: 377px;
         }
       }
 

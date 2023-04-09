@@ -7,8 +7,9 @@ import {Link} from "react-router-dom";
 import logo from './../../assets/img/logo.svg';
 
 // files
-import fl1 from './../../assets/files/СОУТ_таблица 1.pdf';
-import fl2 from './../../assets/files/СОУТ_перечень мероприятий.pdf';
+import fl1 from './../../assets/files/fl1.pdf';
+import fl2 from './../../assets/files/fl2.pdf';
+
 const Footer = () => {
   return(
     <div className={styles.footer} id='scrollFooter'>

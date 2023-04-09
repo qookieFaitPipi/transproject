@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 // components
 import Header from "../../multComponents/Header/Header";
@@ -13,6 +13,9 @@ import Components from "./Components/Components";
 import Footer from "../../multComponents/Footer/Footer";
 
 const IndexPage = () => {
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, [])
   return(
     <section>
       <IndexHeader />
