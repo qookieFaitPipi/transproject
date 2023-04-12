@@ -56,6 +56,19 @@
         .vacancyPrice {
           width: auto;
           margin-top: 0px;
+          text-align: center;
+
+          .vacancyPriceText {
+            padding: 10px;
+          }
+        }
+        .vacancyInfo {
+          width: 100%;
+          text-align: start;
+
+          .vacancyTitle {
+            margin-left: 0px;
+          }
         }
       }
     }

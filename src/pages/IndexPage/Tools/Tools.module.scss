@@ -55,16 +55,23 @@
           order: 1;
           display: flex;
           justify-content: center;
-
+          margin-top: 10px;
+          margin-bottom: 10px;
+          
           .toolImage {
             width: 100%;
           }
         }
         .toolTextBlock {
           display: block;
+          width: 100%;
 
           .toolTitle {
             font-size: 17px;
+            text-align: center;
+          }
+          .toolDescription {
+            text-align: center;
           }
         }
       }
