@@ -13,29 +13,43 @@
       .vacancyPrice {
         display: block;
         margin-top: 35px;
+        width: 50%;
+        
+        .vacancyPriceInfoBlock {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
 
-        .vacancyPriceText {
-          border: 2px solid #000000;
-          margin: 5px;
-          white-space: nowrap;
-          padding: 20px;
-
-        }
-        .vacancyPriceInfo {
-          text-align: center;
+          .vacancyPriceText {
+            border: 2px solid #000000;
+            margin: 5px;
+            white-space: nowrap;
+            text-align: center;
+            padding: 30px 60px 30px 60px;
+            border-radius: 5px;
+            font-size: 19px;
+          }
+          .vacancyPriceInfo {
+            text-align: center;
+            font-size: 17px;
+          }
         }
       }
       .vacancyInfo {
         display: flex;
         flex-direction: column;
-        width: 60%;
+        width: 50%;
 
         .vacancyTitle {
           position: relative;
           margin-left: 32px;
+          font-size: 25px;
+          font-weight: 600;
+          margin-bottom: 20px;
         }
         .vacancyText {
           display: block;
+          font-size: 17px;
         }
       }
     }

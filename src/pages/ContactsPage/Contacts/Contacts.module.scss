@@ -7,13 +7,16 @@
 
     .contactsBlock {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
 
       .contactsBlockInfo {
-        margin-top: 40px;
-        
+        background-color: #ebebeb;
+        padding: 20px;
+        border-radius: 5px;
+
         .contactsBlockTitle {
           display: block;
+          font-size: 21px;
         }
         .contactsBlockTel {
           display: flex;
@@ -25,6 +28,7 @@
           }
           .contactsText {
             margin: 5px;
+            font-size: 17px;
           }
         }
       }
@@ -33,7 +37,7 @@
 
         .contactBlockImage {
           height: 300px;
-          width: 500px;
+          width: 550px;
         }
       }
     }

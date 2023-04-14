@@ -6,7 +6,7 @@
     margin: auto;
 
     .workersTitle {
-      font-size: 25px;
+      font-size: 28px;
       text-align: center;
       margin-top: 40px;
       margin-bottom: 40px;
@@ -20,7 +20,6 @@
       .workersItemImageBlock {
         display: block;
 
-
         .workersItemImage {
           height: 559px;
           width: 377px;
@@ -32,13 +31,14 @@
 
         .workersItemInfoTitle {
           font-weight: 400;
-          font-size: 22px;
+          font-size: 21px;
         }
         .workersItemInfoSupTitle {
-          font-size: 18px;
+          font-size: 19px;
         }
         .workersItemInfoText {
           display: block;
+          font-size: 17px;
         }
       }
     }

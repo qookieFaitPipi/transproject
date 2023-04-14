@@ -8,8 +8,10 @@ const VacancyList = () => {
 
         <div className={styles.vacancyListItem}>
           <div className={styles.vacancyPrice}>
-            <p className={styles.vacancyPriceText}>от 69 000 до 92 000 руб.<br /> до вычета налогов</p>
-            <p className={styles.vacancyPriceInfo}>По всем вопросам звоните<br/> +7 (812) 948-55-99</p>
+            <div className={styles.vacancyPriceInfoBlock}>
+              <p className={styles.vacancyPriceText}>от 69 000 до 92 000 руб.<br /> до вычета налогов</p>
+              <p className={styles.vacancyPriceInfo}>По всем вопросам звоните<br/> +7 (812) 948-55-99</p>
+            </div>
           </div>
           <div className={styles.vacancyInfo}>
             <h4 className={styles.vacancyTitle}>Ведущий инженер (градостроительство)</h4>
@@ -40,8 +42,10 @@ const VacancyList = () => {
         <hr />
         <div className={styles.vacancyListItem}>
           <div className={styles.vacancyPrice}>
-            <p className={styles.vacancyPriceText}>от 112 500 до 120 000 руб.<br /> до вычета налогов</p>
-            <p className={styles.vacancyPriceInfo}>По всем вопросам звоните<br/> +7 (812) 948-55-99</p>
+            <div className={styles.vacancyPriceInfoBlock}>
+              <p className={styles.vacancyPriceText}>от 112 500 до 120 000 руб.<br /> до вычета налогов</p>
+              <p className={styles.vacancyPriceInfo}>По всем вопросам звоните<br/> +7 (812) 948-55-99</p>
+            </div>
           </div>
           <div className={styles.vacancyInfo}>
             <h4 className={styles.vacancyTitle}>Главный инженер проекта</h4>
@@ -90,8 +94,10 @@ const VacancyList = () => {
         <hr />
         <div className={styles.vacancyListItem}>
           <div className={styles.vacancyPrice}>
-            <p className={styles.vacancyPriceText}>от 97 700 до 120 000 руб.<br /> до вычета налогов</p>
-            <p className={styles.vacancyPriceInfo}>По всем вопросам звоните<br/> +7 (812) 948-55-99</p>
+            <div className={styles.vacancyPriceInfoBlock}>
+              <p className={styles.vacancyPriceText}>от 97 700 до 120 000 руб.<br /> до вычета налогов</p>
+              <p className={styles.vacancyPriceInfo}>По всем вопросам звоните<br/> +7 (812) 948-55-99</p>
+            </div>
           </div>
           <div className={styles.vacancyInfo}>
             <h4 className={styles.vacancyTitle}>Ведущий инженер (проектирование автомобильных дорог)</h4>
