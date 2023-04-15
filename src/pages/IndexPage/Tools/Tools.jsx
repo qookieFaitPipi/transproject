@@ -9,7 +9,6 @@ import tl4 from './../../../assets/img/tools/tl4.png';
 import tl5 from './../../../assets/img/tools/tl5.jpg';
 import tl6 from './../../../assets/img/tools/tl6.jpg';
 
-
 const Tools = () => {
   return(
     <div className={styles.tools}>

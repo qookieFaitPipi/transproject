@@ -1,43 +1,33 @@
+.partnersTitle {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
 .partners {
+  display: flex;
   margin-top: 70px;
   text-align: center;
 
-  .partnersTitle {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 40px;
-  }
-
-  .partnersContent {
+  .partnersItem {
     display: flex;
-    max-width: 95%;
-    margin: auto;
-    overflow-x: auto !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    pointer-events: none;
+    user-select: none;
 
-    .partnersLine {
-      display: flex;
-      justify-content: space-around;
-
-      .partnersItem {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 400px;
-        height: 200px;
-        text-align: center;
-
-
-        .partnersItemText {
-          font-size: 12px;
-        }
-        .partnersItemTextH {
-          font-family: 'Sacramento', cursive;
-          font-size: 28px;
-          text-align: center;
-          margin-top: 25px;
-        }
-      }
+    .partnersItemText {
+      font-size: 12px;
+    }
+    .partnersItemTextH {
+      font-family: 'Sacramento', cursive;
+      font-size: 28px;
+      text-align: center;
+      margin-top: 25px;
     }
   }
 }
