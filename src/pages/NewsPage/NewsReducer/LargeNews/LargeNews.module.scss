@@ -2,9 +2,9 @@
   display: flex;
   margin: 20px;
   background-clip: border-box;
-  background-color: #fff;
   border-radius: 5px;
   border: 1px solid rgba(0,0,0,.125);
+  background-color: #ebebeb;
 
   .newsItemImageBlock {
     display: flex;
@@ -20,6 +20,7 @@
   .newsItemTextBlock {
     display: block;
     margin: 15px;
+    width: 100%;
 
     .newsItemDate {
       font-weight: 600;

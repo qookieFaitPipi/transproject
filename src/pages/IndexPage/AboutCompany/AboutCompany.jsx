@@ -4,6 +4,7 @@ import styles from './AboutCompany.module.scss';
 const AboutCompany = () => {
   return(
     <div className={styles.aboutCompany}>
+      <h4 className={styles.aboutCompanyTitle}>О нас</h4>
       <p className={styles.aboutCompanyText}>
         <b>ООО «ТранспроектИнжиниринг»</b> - команда профессионалов в области транспортного
         планирования и комплексного проектирования автомобильных дорог и объектов транспортной инфраструктуры.

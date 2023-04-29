@@ -9,6 +9,7 @@ const SmallNews = (props) => {
       </div>
       <div className={styles.newsItemTextBlock}>
         <p className={styles.newsItemDate}>{props.date}</p>
+        <hr />
         <p className={styles.newsItemText}>{props.text} {props.link != '' ? <a href={props.url}>{props.link}</a> : <div></div>}</p>
       </div>
     </div>
