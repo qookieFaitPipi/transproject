@@ -1,0 +1,66 @@
+.feedbackForm {
+  margin-top: 40px;
+
+  .feedbackFormContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .feedbackNameBlock {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+
+      .feedbackNameLabel {
+        color: #808080;
+      }
+      .feedbackNameInput {
+        height: 40px;
+        width: 500px;
+        border-radius: 10px;
+        outline: none;
+        border: 1px #808080 solid;
+      }
+
+      .feedbackSelectInput {
+        height: 40px;
+        width: 500px;
+        border-radius: 10px;
+        outline: none;
+        border: 1px #808080 solid;
+      }
+
+      .feedbackMessageInput {
+        height: 200px;
+        width: 500px;
+        border-radius: 10px;
+        outline: none;
+        border: 1px #808080 solid;
+      }
+
+      .feedbackFileInput {
+        //width: 400px;
+        //border: 1px #000 solid;
+      }
+    }
+
+    .feedbackContinueBlock {
+      margin-top: 20px;
+
+      .feedbackContinueInput {
+        height: 40px;
+        width: 200px;
+        border-radius: 10px;
+        outline: none;
+        border: 1px #808080 solid;
+      }
+
+      .feedbackContinueInput:hover {
+        background-color: #44944A;
+        color: #fff;
+        transition: 0.5s;
+      }
+    }
+  }
+}

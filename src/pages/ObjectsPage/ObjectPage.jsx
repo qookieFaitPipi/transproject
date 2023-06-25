@@ -1,10 +1,10 @@
 import React, {useEffect} from "react";
 
 // components
-import Footer from "../../multComponents/Footer/Footer";
+import Header from "../../multComponents/Header/Header";
 import MapComponent from "./MapComponent/MapComponent";
 import ObjectsReducer from "./ObjectsReducer/ObjectsReducer";
-import Header from "../../multComponents/Header/Header";
+import Footer from "../../multComponents/Footer/Footer";
 
 const ObjectPage = () => {
   useEffect(() => {

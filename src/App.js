@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 // react-router-dom
 import {Routes, Route} from 'react-router-dom';
@@ -12,6 +12,11 @@ import VacancyPage from "./pages/VacancyPage/VacancyPage";
 import ContactsPage from "./pages/ContactsPage/ContactsPage";
 
 function App() {
+  useEffect(() => {
+    if(window.location.origin === 'http://tpe.su' || window.location.origin === 'http://www.tpe.su') {
+      window.location = 'https://tpe.su';
+    }
+  }, [])
   return (
     <>
       <Routes>

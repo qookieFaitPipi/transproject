@@ -40,7 +40,7 @@ const NewsReducer = () => {
     {
       id: 9,
       picture : nw10,
-      date: '1.05.2023', 
+      date: '01.05.2023', 
       title: '',
       text: 'Уважаемые коллеги, друзья и соотечественники, поздравляем с праздником весны и труда! Желаем большого энтузиазма и удачи во всех начинаниях! Чтобы все ваши труды были не напрасны и радовали результатами! Счастливых праздничных дней и отличного настроения!',
       size: 1,
@@ -132,9 +132,9 @@ const NewsReducer = () => {
   return(
     <div className={styles.reducer}>
       {news.map(news => {
-        if(news.size == 1) {
+        if(news.size === 1) {
           return <SmallNews key={news.id} picture={news.picture} date={news.date} title={news.title} text={news.text} link={news.link} url={news.url} />
-        } else if(news.size == 2) {
+        } else if(news.size === 2) {
           return <LargeNews key={news.id} picture1={news.picture1} picture2={news.picture2} date={news.date} title={news.title} text={news.text} link={news.link} url={news.url} />
         }
       })}

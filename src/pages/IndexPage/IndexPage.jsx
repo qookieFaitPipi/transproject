@@ -2,8 +2,6 @@ import React, {useEffect} from "react";
 
 // components
 import Header from "../../multComponents/Header/Header";
-import IndexHeader from "./IndexHeader/IndexHeader";
-
 import FullPageWall from "./FullPageWall/FullPageWall";
 import AboutCompany from "./AboutCompany/AboutCompany";
 import Tools from "./Tools/Tools";
@@ -18,7 +16,7 @@ const IndexPage = () => {
   }, [])
   return(
     <section>
-      <IndexHeader />
+      <Header />
       <FullPageWall />
       <AboutCompany />
       <Tools />

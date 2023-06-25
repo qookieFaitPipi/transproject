@@ -13,6 +13,7 @@ const NewsPage = () => {
     <section>
       <Header />
       <NewsReducer />
+      
       <Footer /> 
     </section>
   );

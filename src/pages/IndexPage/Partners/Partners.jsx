@@ -24,7 +24,7 @@ const Partners = () => {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 5
+      items: 3
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -42,14 +42,14 @@ const Partners = () => {
       <Carousel responsive={responsive} className={styles.partners} id='scrollPartners'>
         <div className={styles.partnersItem}>
           <img className={styles.partnersItemImage} width="150px" height="150px" src={pt1} alt="" />
-          <p className={styles.partnersItemText}>Санкт-Петербургское государственное <br/> казенное учреждение «Фонд капитального <br/>строительства и реконструкции»</p>
+          <div className={styles.partnersItemText}>Санкт-Петербургское государственное <br/> казенное учреждение «Фонд капитального <br/>строительства и реконструкции»</div>
         </div>
         <div className={styles.partnersItem}>
           <img className={styles.partnersItemImage} width="300px" height="150px" src={pt2} alt="" />
         </div>
         <div className={styles.partnersItem}>
           <img className={styles.partnersItemImage} width="150px" height="150px" src={pt3} alt="" />
-          <p className={styles.partnersItemText}>Комитет по развитию транспортной <br/> инфраструктуры Санкт-Петербурга</p>
+          <div className={styles.partnersItemText}>Комитет по развитию транспортной <br/> инфраструктуры Санкт-Петербурга</div>
         </div>
 
         <div className={styles.partnersItem}>
@@ -67,10 +67,10 @@ const Partners = () => {
         </div>
         <div className={styles.partnersItem}>
           <img className={styles.partnersItemImage} width="150px" height="150px" src={pt8} alt="" />
-          <p className={styles.partnersItemText}>Администрация Белоярского <br/> района</p>
+          <div className={styles.partnersItemText}>Администрация Белоярского <br/> района</div>
         </div>
         <div className={styles.partnersItem}>
-          <p className={styles.partnersItemTextH}>Единые системные <br/> технологии</p>
+          <div className={styles.partnersItemTextH}>Единые системные <br/> технологии</div>
         </div>
       </Carousel>
     </>

@@ -32,6 +32,11 @@
           .vacancyPriceInfo {
             text-align: center;
             font-size: 17px;
+            cursor: pointer;
+            transform: 0.5s;
+          }
+          .vacancyPriceInfo:hover {
+            color: green;
           }
         }
       }

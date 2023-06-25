@@ -10,7 +10,7 @@ const VacancyList = () => {
           <div className={styles.vacancyPrice}>
             <div className={styles.vacancyPriceInfoBlock}>
               <p className={styles.vacancyPriceText}>от 69 000 до 92 000 руб.<br /> до вычета налогов</p>
-              <p className={styles.vacancyPriceInfo}>По всем вопросам звоните<br/> +7 (812) 948-55-99</p>
+              <p className={styles.vacancyPriceInfo} onClick={() => document.getElementById('feedBackForm').scrollIntoView({behavior: "smooth"})}>Откликнуться</p>
             </div>
           </div>
           <div className={styles.vacancyInfo}>
@@ -44,7 +44,7 @@ const VacancyList = () => {
           <div className={styles.vacancyPrice}>
             <div className={styles.vacancyPriceInfoBlock}>
               <p className={styles.vacancyPriceText}>от 112 500 до 120 000 руб.<br /> до вычета налогов</p>
-              <p className={styles.vacancyPriceInfo}>По всем вопросам звоните<br/> +7 (812) 948-55-99</p>
+              <p className={styles.vacancyPriceInfo} onClick={() => document.getElementById('feedBackForm').scrollIntoView({behavior: "smooth"})}>Откликнуться</p>
             </div>
           </div>
           <div className={styles.vacancyInfo}>
@@ -96,7 +96,7 @@ const VacancyList = () => {
           <div className={styles.vacancyPrice}>
             <div className={styles.vacancyPriceInfoBlock}>
               <p className={styles.vacancyPriceText}>от 97 700 до 120 000 руб.<br /> до вычета налогов</p>
-              <p className={styles.vacancyPriceInfo}>По всем вопросам звоните<br/> +7 (812) 948-55-99</p>
+              <p className={styles.vacancyPriceInfo} onClick={() => document.getElementById('feedBackForm').scrollIntoView({behavior: "smooth"})}>Откликнуться</p>
             </div>
           </div>
           <div className={styles.vacancyInfo}>

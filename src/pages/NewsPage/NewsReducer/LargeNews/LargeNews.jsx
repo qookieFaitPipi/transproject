@@ -1,7 +1,6 @@
 import React from "react";
 import styles from './LargeNews.module.scss';
 
-import fl1 from './../../../../assets/files/УВЕДОМЛЕНИЕ КПООС_v.2.pdf'
 const LargeNews = (props) => {
   return(
     <div className={styles.newsItem}>
@@ -10,9 +9,9 @@ const LargeNews = (props) => {
         <img className={styles.newsItemImage} src={props.picture2} alt="" />
       </div>
       <div className={styles.newsItemTextBlock}>
-        <p className={styles.newsItemDate}>{props.date}</p>
+        <div className={styles.newsItemDate}>{props.date}</div>
         <hr />
-        <p className={styles.newsItemText}>{props.text} {props.link != '' ? <a href={props.url}>{props.link}</a> : <div></div>}</p>
+        <div className={styles.newsItemText}>{props.text} {props.link !== '' ? <a href={props.url}>{props.link}</a> : <div></div>}</div>
       </div>
     </div>
   );
