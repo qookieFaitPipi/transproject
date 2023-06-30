@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import styles from './FullPageWall.module.scss';
 
+// pictures
+import background from './../../../assets/img/fullpage.jpg';
+
 const FullPageWall = () => {
   let [message, setMessage] = useState('ДОКУМЕНТАЦИЯ ПО ПЛАНИРОВКЕ ТЕРРИТОРИИ');
   let array = [
@@ -25,7 +28,7 @@ const FullPageWall = () => {
   }, []);
 
   return(
-    <div className={styles.fullPageWall}>
+    <div className={styles.fullPageWall} style={{backgroundImage: `url(${background})`}}>
       <h1 className={styles.fullPageTitle}>ТранспроектИнжиниринг</h1>
       <div className={styles.quickMessage}>{message}</div>
     </div>
