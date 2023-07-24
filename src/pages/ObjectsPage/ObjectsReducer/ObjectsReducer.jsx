@@ -3,7 +3,7 @@ import styles from './ObjectsReducer.module.scss';
 
 import Object from "./Object/Object";
 
-const ObjectsReducer = () => {
+const ObjectsReducer = (props) => {
   const objects = [
     { 
       id: 1, 
@@ -174,7 +174,7 @@ const ObjectsReducer = () => {
 
   return(
     <div className={styles.reducer}>
-      {objects.map(object => {
+      {objects.filter((item) => item.title.toLowerCase().includes(props.searchValue.toLowerCase())).map(object => {
         return <Object key={object.id} title={object.title} text={object.text} />
       })}
     </div>

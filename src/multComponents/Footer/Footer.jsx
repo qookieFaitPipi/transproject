@@ -19,7 +19,7 @@ const Footer = () => {
           <div className={styles.footerColumn}>
             <div className={styles.footerColumnTitle}>
               <img className={styles.footerColumnLogo} src={logo} alt="" />
-              <h4 className={styles.footerColumnDescription}>Транспроектинжиниринг</h4>
+              <h4 className={styles.footerColumnDescription}>ТранспроектИнжиниринг</h4>
             </div>
             <div className={styles.footerColumnAbout}>
               <p className={styles.footerColumnAboutItem}><b>Адрес:</b> 196084, Россия, Санкт-Петербург,<br/>Малая Митрофаньевская улица, д.4, литер Л, офис 318</p>

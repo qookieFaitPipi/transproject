@@ -1,0 +1,16 @@
+.logoSearchContainer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 20px;
+  margin-right: 35px;
+
+  .logoSearchInput {
+    width: 300px;
+    height: 45px;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #808080;
+    font-size: 16px;
+  }
+}

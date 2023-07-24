@@ -26,7 +26,7 @@ const IndexHeader = () => {
       <div className={styles.headerContent}>
         <div className={styles.headerLogoBlock}>
           <img className={styles.logo} src={logo} alt="" />
-          <li className={styles.logoTitle}>Транспроектинжиниринг</li>
+          <li className={styles.logoTitle}>ТранспроектИнжиниринг</li>
         </div>
         <div className={styles.headerNavBlock}>
 

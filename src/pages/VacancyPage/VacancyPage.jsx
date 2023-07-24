@@ -2,7 +2,8 @@ import React, {useEffect} from "react";
 
 // components
 import Header from "../../multComponents/Header/Header";
-import VacancyList from "./VacancyList/VacancyList";
+
+import VacancyReducer from "./VacancyReducer/VacancyReducer";
 import FeedbackForm from "./FeedbackForm/FeedbackForm";
 import Footer from "../../multComponents/Footer/Footer";
 
@@ -14,8 +15,7 @@ const VacancyPage = () => {
   return(
     <section>
       <Header />
-      <VacancyList />
-      <FeedbackForm />
+      <VacancyReducer />
       <Footer />
     </section>
   );
