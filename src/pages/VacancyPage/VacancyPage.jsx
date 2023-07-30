@@ -16,6 +16,7 @@ const VacancyPage = () => {
     <section>
       <Header />
       <VacancyReducer />
+      <FeedbackForm />
       <Footer />
     </section>
   );
