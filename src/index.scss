@@ -1,0 +1,15 @@
+html, body {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif !important;
+}
+li {
+  list-style: none;
+}
+
+// TitleBlock
+$DesktopTitleSize: 28px;
+$DesktopTitleMargin: 20px;
+
+$MobileTitleSize: 21px;

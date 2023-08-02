@@ -1,0 +1,92 @@
+@import './../../../index.scss';
+
+.workers {
+  display: block;
+
+  .workersContent {
+    max-width: 95%;
+    margin: auto;
+
+    .workersTitle {
+      text-align: center;
+      font-size: $DesktopTitleSize;
+      margin-bottom: $DesktopTitleMargin;
+
+      @media (max-width: 767px) {
+        font-size: $MobileTitleSize;
+      }
+    }
+    .workersItem {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 60px;
+      border: 1px #ebebeb solid;
+      border-radius: 20px;
+      background-color: #fff;
+
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
+
+      .workersItemImageBlock {
+        display: block;
+
+        @media (max-width: 767px) {
+          display: flex;
+          justify-content: center;
+        }
+
+        .workersItemImage {
+          height: 559px;
+          width: 377px;
+
+          @media (max-width: 767px) {
+            border-radius: 20px !important;
+            width: 90%;
+            margin: 0 auto;
+            height: 470px;
+          }
+        }
+      }
+
+      .workersItemInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px;
+
+        @media (max-width: 767px) {
+          order: 1;
+          align-items: center;
+        }
+
+        .workersItemInfoTitle {
+          font-weight: 400;
+          font-size: 21px;
+          padding-bottom: 15px;
+          border-bottom: 1px #808080 solid;
+
+          @media (max-width: 767px) {
+            text-align: center;
+            margin: 10px;
+          }
+        }
+        .workersItemInfoSupTitle {
+          font-size: 19px;
+          
+          @media (max-width: 767px) {
+            text-align: center;
+          }
+        }
+        .workersItemInfoText {
+          display: block;
+          font-size: 17px;
+
+          @media (max-width: 767px) {
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+}

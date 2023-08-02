@@ -1,17 +1,14 @@
 .objectsMap {
-  margin-top: 20px !important;
+  margin-top: 20px;
   max-width: 95%;
   margin: auto;
+
+  @media (max-width: 767px) {
+    margin-top: 0px;
+  }
 
   .objectsContent {
     display: flex;
     justify-content: center;
-  }
-}
-
-@media (max-width: 767px) {
-  .objectsMap {
-    margin-top: 0px !important;
-    width: 100%;
   }
 }

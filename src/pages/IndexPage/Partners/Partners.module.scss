@@ -1,12 +1,17 @@
+@import './../../../index.scss';
+
 .partnersTitle {
   text-align: center;
-  font-size: 28px;
-  margin-bottom: 40px;
+  font-size: $DesktopTitleSize;
+  margin-bottom: $DesktopTitleMargin;
+
+  @media (max-width: 767px) {
+    font-size: $MobileTitleSize;
+  }
 }
 
 .partners {
   display: flex;
-  margin-top: 70px;
 
   .partnersItem {
     display: flex;
@@ -26,30 +31,6 @@
       font-size: 28px;
       text-align: center;
       margin-top: 25px;
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  .partners {
-    display: block;
-
-    .partnersContent {
-      display: block;
-
-      .partnersTitle {
-        font-size: 21px;
-      }
-      .partnersLine {
-        flex-direction: column;
-
-        .partnersItem {
-          width: auto;
-          height: auto;
-          text-align: center;
-          margin-top: 30px;
-        }
-      }
     }
   }
 }

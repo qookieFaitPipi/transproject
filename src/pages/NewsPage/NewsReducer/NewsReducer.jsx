@@ -1,8 +1,8 @@
 import React from "react";
 import styles from './NewsReducer.module.scss';
 
-import SmallNews from "./SmallNews/SmallNews";
-import LargeNews from "./LargeNews/LargeNews";
+import SmallNews from "./NewsItem/SmallNews";
+import LargeNews from "./NewsItem/LargeNews";
 
 // images
 import nw1 from './../../../assets/img/news/nw1.jpg';

@@ -10,10 +10,10 @@ const FeedbackForm = () => {
   const [file, setFile] = useState();
 
   const sendFeedback = () => {
-    if(name == '') {
+    if(name === '') {
       alert("Введите Ваши ФИО");
       return;
-    } else if(email == '' || !email.includes('@') || !email.includes('.')) {
+    } else if(email === '' || !email.includes('@') || !email.includes('.')) {
       alert("Введите Вашу почту");
       return;
     }
@@ -36,13 +36,15 @@ const FeedbackForm = () => {
     .then((data) => {
       if(data.is_send) {
         alert("Мы получили Ваш отлик");
-        setName('');
-        setEmail('');
-        setTelnum('');
-        setMessage();
-        setFile();
       }
+      window.location.reload()
+
     })
+    setName('');
+    setEmail('');
+    setTelnum('');
+    setMessage('');
+    setFile();
   }
 
   return (

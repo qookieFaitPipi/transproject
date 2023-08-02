@@ -18,7 +18,6 @@ import pt8 from './../../../assets/img/partners/pt8.jpg';
 const Partners = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5
     },
@@ -38,7 +37,7 @@ const Partners = () => {
 
   return(
     <>
-      <h4 className={styles.partnersTitle} id='scrollPartners'>Наши заказчики</h4>
+      <div className={styles.partnersTitle} id='scrollPartners'>Наши заказчики</div>
       <Carousel responsive={responsive} className={styles.partners} id='scrollPartners'>
         <div className={styles.partnersItem}>
           <img className={styles.partnersItemImage} width="150px" height="150px" src={pt1} alt="" />

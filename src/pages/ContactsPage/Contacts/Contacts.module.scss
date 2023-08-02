@@ -9,6 +9,10 @@
       display: flex;
       justify-content: space-evenly;
 
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
+
       .contactsBlockInfo {
         background-color: #ebebeb;
         padding: 20px;
@@ -33,47 +37,16 @@
         }
       }
       .contactsBlockImage {
-        display: block;
+        display: flex;
+        
+        @media (max-width: 767px) {
+          justify-content: center;
+        }
 
         .contactBlockImage {
           border-radius: 5px;
           height: 300px;
           width: 550px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  .contacts {
-    display: block;
-
-    .contactsContent {
-      display: block;
-
-      .contactsBlock {
-        flex-direction: column;
-
-        .contactsBlockInfo {
-          display: block;
-          margin-top: 0px;
-
-          .contactsBlockTitle {
-            text-align: center;
-          }
-          .contactsBlockTel {
-            display: flex;
-            justify-content: center;
-          }
-        }
-
-        .contactsBlockImage {
-          display: block;
-
-          .contactBlockImage {
-            width: 100%;
-          }
         }
       }
     }

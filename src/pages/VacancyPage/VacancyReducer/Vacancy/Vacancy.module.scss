@@ -4,10 +4,19 @@
   margin-top: 35px;
   border-bottom: 1px #ebebeb solid;
 
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+
   .vacancyPrice {
     display: block;
     margin-top: 35px;
     width: 50%;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      margin-top: 0px;
+    }
     
     .vacancyPriceInfoBlock {
       display: flex;
@@ -39,12 +48,22 @@
     flex-direction: column;
     width: 50%;
 
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+
     .vacancyTitle {
       position: relative;
       margin-left: 32px;
       font-size: 25px;
       font-weight: 600;
       margin-bottom: 20px;
+        
+      
+      @media (max-width: 767px) {
+        text-align: center;
+        margin-left: 0px;
+      }
     }
     .vacancyText {
       display: block;
@@ -54,29 +73,4 @@
 }
 .vacancyListItem:last-child {
   border-bottom: none;
-}
-
-@media (max-width: 767px) {
-  .vacancyListItem {
-    flex-direction: column;
-    justify-content: center;
-    
-    .vacancyPrice {
-      width: auto;
-      margin-top: 0px;
-      text-align: center;
-
-      .vacancyPriceText {
-        padding: 10px;
-      }
-    }
-    .vacancyInfo {
-      width: 100%;
-      text-align: start;
-
-      .vacancyTitle {
-        margin-left: 0px;
-      }
-    }
-  }
 }

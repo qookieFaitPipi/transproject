@@ -1,3 +1,5 @@
+@import './../../../index.scss';
+
 .aboutCompany {
   position: relative;
   max-width: 95%;
@@ -5,22 +7,23 @@
   margin-top: 20px;
   margin-bottom: 50px;
 
+  @media (max-width: 767px) {
+    position: relative;
+    text-align: justify;
+    margin: 10px;
+  }
 
   .aboutCompanyTitle {
     text-align: center;
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: $DesktopTitleSize;
+    margin-bottom: $DesktopTitleMargin;
+
+    @media (max-width: 767px) {
+      font-size: $MobileTitleSize;
+    }
   }
   
   .aboutCompanyText {
     font-size: 15px;
-  }
-}
-
-@media (max-width: 767px) {
-  .aboutCompany {
-      position: relative;
-      text-align: justify;
-      margin: 10px;
   }
 }

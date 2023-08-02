@@ -9,7 +9,7 @@ const Components = () => {
   return(
     <div className={styles.components}>
       <div className={styles.componentsContent}>
-        <h4 className={styles.componentsTitle}>ООО «ТранспроектИнжиниринг» состоит в следующих саморегулируемых организациях:</h4>
+        <div className={styles.componentsTitle}>ООО «ТранспроектИнжиниринг» состоит в следующих саморегулируемых организациях:</div>
         
         <div className={styles.componentsItem}>
           <img className={styles.componentsImage} src={cm1} alt="" />

@@ -1,14 +1,15 @@
 import React, {useEffect} from "react";
 
 // components
-import Header from "../../multComponents/Header/Header";
+import Header from "../../Universal/Header/Header";
+import Invisible from "../../Universal/Invisible/Invisible";
 import FullPageWall from "./FullPageWall/FullPageWall";
 import AboutCompany from "./AboutCompany/AboutCompany";
 import Tools from "./Tools/Tools";
-import Workers from "./Workers/Workers";
+import Founders from "./Founders/Founders";
 import Partners from "./Partners/Partners";
 import Components from "./Components/Components";
-import Footer from "../../multComponents/Footer/Footer";
+import Footer from "../../Universal/Footer/Footer";
 
 const IndexPage = () => {
   useEffect(() => {
@@ -17,10 +18,11 @@ const IndexPage = () => {
   return(
     <section>
       <Header />
+      <Invisible />
       <FullPageWall />
       <AboutCompany />
       <Tools />
-      <Workers />
+      <Founders />
       <Partners />
       <Components />
       <Footer />

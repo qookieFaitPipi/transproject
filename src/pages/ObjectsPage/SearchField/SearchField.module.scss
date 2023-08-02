@@ -1,9 +1,14 @@
 .logoSearchContainer {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   margin-top: 20px;
   margin-right: 35px;
+
+  @media (max-width: 767px) {
+    justify-content: center;
+    margin-right: 0px;
+  }
 
   .logoSearchInput {
     width: 300px;

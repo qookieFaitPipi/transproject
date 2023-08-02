@@ -1,9 +1,10 @@
 import React, {useEffect} from "react";
 
 // components
-import Header from "../../multComponents/Header/Header";
+import Header from "../../Universal/Header/Header";
+import Invisible from "../../Universal/Invisible/Invisible";
 import NewsReducer from "./NewsReducer/NewsReducer";
-import Footer from "../../multComponents/Footer/Footer";
+import Footer from "../../Universal/Footer/Footer";
 
 const NewsPage = () => {
   useEffect(() => {
@@ -12,6 +13,7 @@ const NewsPage = () => {
   return(
     <section>
       <Header />
+      <Invisible />
       <NewsReducer />
       
       <Footer /> 
