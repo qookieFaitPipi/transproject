@@ -19,12 +19,10 @@ class ObjectsList(db.Model):
 class NewsList(db.Model):
   id = db.Column(db.Integer, primary_key=True)
   date = db.Column(db.String(100), nullable=False)
-  imageURL1 = db.Column(db.String(100), nullable=False)
-  imageURL2 = db.Column(db.String(100), nullable=True)
+  imageURL = db.Column(db.String(100), nullable=False)
   text = db.Column(db.String(2000), nullable=False)
   link = db.Column(db.String(100), nullable=True)
   url = db.Column(db.String(100), nullable=True)
-  size = db.Column(db.Integer, nullable=False)
 
 
 class VacancyList(db.Model):
@@ -46,7 +44,7 @@ def get_objects():
 @host.route('/get_news')
 def get_news():
   items = NewsList.query.order_by(NewsList.id).all()
-  items = list(map(lambda el: {'id': el.id, 'date': el.date, 'imageURL1': el.imageURL1, 'imageURL2': el.imageURL2, 'text': el.text, 'link': el.link, 'url': el.url, 'size': el.size}, items))[::-1]
+  items = list(map(lambda el: {'id': el.id, 'date': el.date, 'imageURL': list(map(lambda e: 'https://hosting.alexavr.ru/' + e, json.loads(el.imageURL))), 'text': el.text, 'link': el.link, 'url': el.url}, items))[::-1]
   return jsonify(items)
 
 

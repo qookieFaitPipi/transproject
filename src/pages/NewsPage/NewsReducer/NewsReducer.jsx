@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from './NewsReducer.module.scss';
 import axios from "axios";
 
-import SmallNews from "./NewsItem/SmallNews";
-import LargeNews from "./NewsItem/LargeNews";
+import NewsItem from "./NewsItem/NewsItem";
 
 const NewsReducer = () => {
   const [news, setNews] = useState([]);
@@ -16,12 +15,8 @@ const NewsReducer = () => {
 
   return(
     <div className={styles.reducer}>
-      {news.map(news => {
-        if(news.size === 1) {
-          return <SmallNews key={news.id} picture={news.imageURL1} date={news.date} title={news.title} text={news.text} link={news.link} url={news.url} />
-        } else if(news.size === 2) {
-          return <LargeNews key={news.id} picture1={news.imageURL1} picture2={news.imageURL2} date={news.date} title={news.title} text={news.text} link={news.link} url={news.url} />
-        }
+      {news.map(obj => {
+        return <NewsItem key={obj.id} imageURL={obj.imageURL} date={obj.date} text={obj.text} link={obj.link} url={obj.url} />
       })}
     </div>
   );

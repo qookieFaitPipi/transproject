@@ -1,11 +1,13 @@
 import React from "react";
 import styles from './NewsItem.module.scss';
 
-const SmallNews = (props) => {
+const NewsItem = (props) => {
   return(
     <div className={styles.newsItem}>
       <div className={styles.newsItemImageBlock}>
-        <img className={styles.newsItemImage} src={props.picture} alt="" />
+        {props.imageURL.map((obj) => 
+          <img className={styles.newsItemImage} src={obj} alt="" />
+        )}
       </div>
       <div className={styles.newsItemTextBlock}>
         <div className={styles.newsItemDate}>{props.date}</div>
@@ -15,4 +17,4 @@ const SmallNews = (props) => {
   );
 }
 
-export default React.memo(SmallNews);
+export default React.memo(NewsItem);
