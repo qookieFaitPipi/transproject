@@ -1,3 +1,5 @@
+@import './../../../index.scss';
+
 .feedbackForm {
   margin-top: 40px;
 
@@ -6,6 +8,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 700px;
+    margin: 0 auto;
+    border: 1px #ebebeb solid;
+    border-radius: 10px;
+    padding: 20px;
+
+    @media (max-width: 767px) {
+      width: auto;
+    }
+
+    .feedbackFormTitle {
+      text-align: center;
+      font-size: $DesktopTitleSize;
+      margin-bottom: $DesktopTitleMargin;
+
+      @media (max-width: 767px) {
+        font-size: $MobileTitleSize;
+      }
+    }
 
     .feedbackNameBlock {
       display: flex;
@@ -21,6 +42,10 @@
         border-radius: 10px;
         outline: none;
         border: 1px #808080 solid;
+
+        @media (max-width: 767px) {
+          width: 350px;
+        }
       }
 
       .feedbackSelectInput {
@@ -29,6 +54,10 @@
         border-radius: 10px;
         outline: none;
         border: 1px #808080 solid;
+
+        @media (max-width: 767px) {
+          width: 350px;
+        }
       }
 
       .feedbackMessageInput {
@@ -37,11 +66,28 @@
         border-radius: 10px;
         outline: none;
         border: 1px #808080 solid;
+
+        @media (max-width: 767px) {
+          width: 350px;
+        }
       }
 
       .feedbackFileInput {
         //width: 400px;
         //border: 1px #000 solid;
+      }
+    }
+    .feedbackCheckBoxBlock {
+      display: flex;
+      align-items:flex-start;
+      width: 500px;
+
+      .feedbackCheckBoxInput {
+        margin: 10px;
+      }
+
+      .feedbackCheckBoxText {
+        
       }
     }
 

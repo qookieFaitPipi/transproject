@@ -5,7 +5,7 @@
   max-width: 95%;
   margin: 0 auto;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   @media (max-width: 767px) {
     position: relative;
@@ -24,6 +24,7 @@
   }
   
   .aboutCompanyText {
-    font-size: 15px;
+    font-size: 16px;
+    margin-top: 15px;
   }
 }

@@ -2,8 +2,8 @@ import React from "react";
 import styles from './Founders.module.scss';
 
 // images
-import wr1 from './../../../assets/img/workers/wr3.jpg';
-import wr2 from './../../../assets/img/workers/wr4.jpg';
+import wr1 from './../../../Assets/img/workers/wr3.jpg';
+import wr2 from './../../../Assets/img/workers/wr4.jpg';
 
 const Workers = () => {
   return(

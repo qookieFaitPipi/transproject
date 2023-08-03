@@ -4,16 +4,16 @@ import styles from './Footer.module.scss';
 import {Link} from "react-router-dom";
 
 // images
-import logo from './../../assets/img/logo.svg';
+import logo from './../../Assets/img/logo.svg';
 
 // files
-import fl1 from './../../assets/files/fl1.pdf';
-import fl2 from './../../assets/files/fl2.pdf';
+import fl1 from './../../Assets/files/fl1.pdf';
+import fl2 from './../../Assets/files/fl2.pdf';
 
-import fl5 from './../../assets/files/fl5.pdf';
-import fl6 from './../../assets/files/fl6.pdf';
+import fl5 from './../../Assets/files/fl5.pdf';
+import fl6 from './../../Assets/files/fl6.pdf';
 
-import fl7 from './../../assets/files/fl7.pdf';
+import fl7 from './../../Assets/files/fl7.pdf';
 
 const Footer = () => {
   return(

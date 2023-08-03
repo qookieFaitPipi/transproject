@@ -4,11 +4,11 @@ import React, {useEffect} from "react";
 import {Routes, Route} from 'react-router-dom';
 
 // pages
-import IndexPage from "./pages/IndexPage/IndexPage";
-import NewsPage from "./pages/NewsPage/NewsPage";
-import ObjectPage from "./pages/ObjectsPage/ObjectPage";
-import VacancyPage from "./pages/VacancyPage/VacancyPage";
-import ContactsPage from "./pages/ContactsPage/ContactsPage";
+import IndexPage from "./Pages/IndexPage/IndexPage";
+import NewsPage from "./Pages/NewsPage/NewsPage";
+import ObjectPage from "./Pages/ObjectsPage/ObjectPage";
+import VacancyPage from "./Pages/VacancyPage/VacancyPage";
+import ContactsPage from "./Pages/ContactsPage/ContactsPage";
 
 function App() {
   useEffect(() => {

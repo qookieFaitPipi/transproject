@@ -2,17 +2,21 @@ import React from "react";
 import styles from './Tools.module.scss';
 
 // tools
-import tl1 from './../../../assets/img/tools/tl1.jpg';
-import tl2 from './../../../assets/img/tools/tl2.jpg';
-import tl3 from './../../../assets/img/tools/tl3.jpg';
-import tl4 from './../../../assets/img/tools/tl4.png';
-import tl5 from './../../../assets/img/tools/tl5.jpg';
-import tl6 from './../../../assets/img/tools/tl6.jpg';
+import tl1 from './../../../Assets/img/tools/tl1.jpg';
+import tl2 from './../../../Assets/img/tools/tl2.jpg';
+import tl3 from './../../../Assets/img/tools/tl3.jpg';
+import tl4 from './../../../Assets/img/tools/tl4.png';
+import tl5 from './../../../Assets/img/tools/tl5.jpg';
+import tl6 from './../../../Assets/img/tools/tl6.jpg';
 
 const Tools = () => {
   return(
     <div className={styles.tools}>
       <div className={styles.toolsContent}>
+
+        <div className={styles.toolsTitleBlock}>
+          <div className={styles.toolsTitle}>Виды работ</div>
+        </div>
 
         <div className={styles.toolItem} style={{backgroundColor: '#ebebeb', color: '#000'}}>
           <div className={styles.toolImageBlock}>

@@ -32,6 +32,10 @@
           display: flex;
           align-items: center;
 
+          @media (max-width: 767px) {
+            justify-content: center;
+          }  
+
           .footerColumnLogo {
             height: 68px;
             width: 68px;

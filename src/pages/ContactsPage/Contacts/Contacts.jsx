@@ -2,12 +2,12 @@ import React from "react";
 import styles from './Contacts.module.scss';
 
 // icons
-import phoneSVG from './../../../assets/img/icons/phone.svg';
-import emailSVG from './../../../assets/img/icons/email.svg';
-import pointSVG from './../../../assets/img/icons/point.svg';
+import phoneSVG from './../../../Assets/img/icons/phone.svg';
+import emailSVG from './../../../Assets/img/icons/email.svg';
+import pointSVG from './../../../Assets/img/icons/point.svg';
 
 // images
-import contactImage from './../../../assets/img/contact-img.jpg';
+import contactImage from './../../../Assets/img/contact-img.jpg';
 const Contacts = () => {
   return(
     <div className={styles.contacts}>

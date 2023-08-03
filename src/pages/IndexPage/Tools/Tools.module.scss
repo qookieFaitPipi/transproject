@@ -6,6 +6,19 @@
 
   .toolsContent {
 
+    .toolsTitleBlock {
+
+      .toolsTitle {
+        text-align: center;
+        font-size: $DesktopTitleSize;
+        margin-bottom: $DesktopTitleMargin;
+      
+        @media (max-width: 767px) {
+          font-size: $MobileTitleSize;
+        }
+      }
+    }
+
     .toolItem {
       display: flex;
       justify-content: space-around;

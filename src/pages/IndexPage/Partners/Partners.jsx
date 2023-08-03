@@ -6,14 +6,14 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 // images
-import pt1 from './../../../assets/img/partners/pt1.jpg';
-import pt2 from './../../../assets/img/partners/pt2.jpg';
-import pt3 from './../../../assets/img/partners/pt3.png';
-import pt4 from './../../../assets/img/partners/pt4.jpg';
-import pt5 from './../../../assets/img/partners/pt5.jpg';
-import pt6 from './../../../assets/img/partners/pt6.jpg';
-import pt7 from './../../../assets/img/partners/pt7.jpg';
-import pt8 from './../../../assets/img/partners/pt8.jpg';
+import pt1 from './../../../Assets/img/partners/pt1.jpg';
+import pt2 from './../../../Assets/img/partners/pt2.jpg';
+import pt3 from './../../../Assets/img/partners/pt3.png';
+import pt4 from './../../../Assets/img/partners/pt4.jpg';
+import pt5 from './../../../Assets/img/partners/pt5.jpg';
+import pt6 from './../../../Assets/img/partners/pt6.jpg';
+import pt7 from './../../../Assets/img/partners/pt7.jpg';
+import pt8 from './../../../Assets/img/partners/pt8.jpg';
 
 const Partners = () => {
   const responsive = {

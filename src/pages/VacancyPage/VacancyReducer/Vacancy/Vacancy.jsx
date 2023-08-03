@@ -13,17 +13,17 @@ const Vacancy = (props) => {
       <div className={styles.vacancyInfo}>
         <div className={styles.vacancyTitle}>{props.title}</div>
         <div className={styles.vacancyText}>
-          <ul> <b>Обязанности:</b>
+          <ul><b>Обязанности:</b>
             {props.duties.map(obj => {
-              return <li>{obj}</li>
+              return <li><div dangerouslySetInnerHTML={{ __html: obj }} /></li>
             })}
           </ul>
-          <ul> <b>Требования:</b>
+          <ul><b>Требования:</b>
             {props.requirements.map(obj => {
               return <li>{obj}</li>
             })}
           </ul>
-          <ul> <b>Условия:</b>
+          <ul><b>Условия:</b>
             {props.conditions.map(obj => {
               return <li>{obj}</li>
             })}

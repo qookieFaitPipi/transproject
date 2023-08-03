@@ -4,7 +4,7 @@ import styles from './Header.module.scss';
 import {Link} from "react-router-dom";
 
 // images
-import logo from './../../assets/img/logo.svg';
+import logo from './../../Assets/img/logo.svg';
 
 const IndexHeader = () => {
   const [headerPopupActive, setHeaderPopupActive] = useState(false);
@@ -28,7 +28,7 @@ const IndexHeader = () => {
           <img className={styles.headerLogo} src={logo} alt="" />
           <div className={styles.headerTitleBlock}>
             <div className={styles.logoTitle}>ТранспроектИнжиниринг</div>
-            <div className={styles.logoSupTitle}>От задачи - к верному инженерному решению</div>
+            <div className={styles.logoSupTitle}>От задачи – к верному инженерному решению</div>
           </div>
         </div>
         <div className={styles.headerNavBlock}>

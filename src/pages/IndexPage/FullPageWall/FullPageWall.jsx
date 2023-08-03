@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from './FullPageWall.module.scss';
 
 // pictures
-import background from './../../../assets/img/fullpage.jpg';
+import background from './../../../Assets/img/fullpage.jpg';
 
 const FullPageWall = () => {
   let [message, setMessage] = useState('ДОКУМЕНТАЦИЯ ПО ПЛАНИРОВКЕ ТЕРРИТОРИИ');
@@ -20,7 +20,7 @@ const FullPageWall = () => {
     const interval = setInterval(() => {
       setMessage(array[i]);
       i++;
-      if(i == array.length) {
+      if(i === array.length) {
         i=0;
       }
     }, 3000);

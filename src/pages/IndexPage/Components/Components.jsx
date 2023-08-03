@@ -2,8 +2,8 @@ import React from "react";
 import styles from './Components.module.scss';
 
 // images
-import cm1 from './../../../assets/img/components/cm1.gif';
-import cm2 from './../../../assets/img/components/cm2.jpg';
+import cm1 from './../../../Assets/img/components/cm1.gif';
+import cm2 from './../../../Assets/img/components/cm2.jpg';
 
 const Components = () => {
   return(
