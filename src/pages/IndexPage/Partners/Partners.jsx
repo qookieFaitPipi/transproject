@@ -15,6 +15,13 @@ import pt6 from './../../../Assets/img/partners/pt6.jpg';
 import pt7 from './../../../Assets/img/partners/pt7.jpg';
 import pt8 from './../../../Assets/img/partners/pt8.jpg';
 
+import pt9 from './../../../Assets/img/partners/pt9.svg';
+import pt10 from './../../../Assets/img/partners/pt10.png';
+import pt11 from './../../../Assets/img/partners/pt11.png';
+import pt12 from './../../../Assets/img/partners/pt12.png';
+import pt13 from './../../../Assets/img/partners/pt13.png';
+import pt14 from './../../../Assets/img/partners/pt14.png';
+
 const Partners = () => {
   const responsive = {
     superLargeDesktop: {
@@ -37,23 +44,27 @@ const Partners = () => {
 
   return(
     <>
-      <div className={styles.partnersTitle} id='scrollPartners'>Наши заказчики</div>
+      <div className={styles.partnersTitle} id='scrollPartners'>Наши заказчики и партнёры</div>
       <Carousel responsive={responsive} className={styles.partners} id='scrollPartners'>
+
         <div className={styles.partnersItem}>
-          <img className={styles.partnersItemImage} width="150px" height="150px" src={pt1} alt="" />
-          <div className={styles.partnersItemText}>Санкт-Петербургское государственное <br/> казенное учреждение «Фонд капитального <br/>строительства и реконструкции»</div>
-        </div>
-        <div className={styles.partnersItem}>
-          <img className={styles.partnersItemImage} width="300px" height="150px" src={pt2} alt="" />
-        </div>
-        <div className={styles.partnersItem}>
-          <img className={styles.partnersItemImage} width="150px" height="150px" src={pt3} alt="" />
+          <img className={styles.partnersItemImage} width="140px" height="140px" src={pt3} alt="" />
           <div className={styles.partnersItemText}>Комитет по развитию транспортной <br/> инфраструктуры Санкт-Петербурга</div>
         </div>
 
         <div className={styles.partnersItem}>
-          <img className={styles.partnersItemImage} width="300px" height="150px" src={pt4} alt="" />
+          <img className={styles.partnersItemImage} width="300px" height="150px" src={pt2} alt="" />
         </div>
+
+        <div className={styles.partnersItem}>
+          <img className={styles.partnersItemImage} width="150px" height="150px" src={pt1} alt="" />
+          <div className={styles.partnersItemText}>Санкт-Петербургское государственное <br/> казенное учреждение «Фонд капитального <br/>строительства и реконструкции»</div>
+        </div>
+
+        <div className={styles.partnersItem}>
+          <img className={styles.partnersItemImage} width="400px" height="150px" src={pt4} alt="" />
+        </div>
+
         <div className={styles.partnersItem}>
           <img className={styles.partnersItemImage} width="300px" height="150px" src={pt5} alt="" />
         </div>
@@ -64,12 +75,37 @@ const Partners = () => {
         <div className={styles.partnersItem}>
           <img className={styles.partnersItemImage} width="150px" height="50px" src={pt7} alt="" />
         </div>
+
         <div className={styles.partnersItem}>
           <img className={styles.partnersItemImage} width="150px" height="150px" src={pt8} alt="" />
           <div className={styles.partnersItemText}>Администрация Белоярского <br/> района</div>
         </div>
+
         <div className={styles.partnersItem}>
-          <div className={styles.partnersItemTextH}>Единые системные <br/> технологии</div>
+          <img className={styles.partnersItemImage} width="300px" height="150px" src={pt9} alt="" />
+        </div>
+
+        <div className={styles.partnersItem}>
+          <img className={styles.partnersItemImage} width="150px" height="150px" src={pt10} alt="" />
+          <div className={styles.partnersItemText}>Администрация Ершовского муниципального <br/> района Саратовской области</div>
+        </div>
+
+        <div className={styles.partnersItem}>
+          <img className={styles.partnersItemImage} width="150px" height="150px" src={pt11} alt="" />
+          <div className={styles.partnersItemText}>Администрация Кореновского городского <br/> поселения Кореновского района</div>
+
+        </div>
+
+        <div className={styles.partnersItem}>
+          <img className={styles.partnersItemImage} width="250px" height="150px" src={pt12} alt="" />
+        </div>
+
+        <div className={styles.partnersItem}>
+          <img className={styles.partnersItemImage} width="300px" height="120px" src={pt13} alt="" />
+        </div>
+
+        <div className={styles.partnersItem}>
+          <img className={styles.partnersItemImage} width="250px" height="150px" src={pt14} alt="" />
         </div>
       </Carousel>
     </>

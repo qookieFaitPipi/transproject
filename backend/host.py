@@ -2,7 +2,6 @@ from flask import *
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 from send_mail import sendMail, renderMail
-
 import json
 
 host = Flask(__name__)
@@ -12,8 +11,9 @@ CORS(host)
 
 class ObjectsList(db.Model):
   id = db.Column(db.Integer, primary_key=True)
-  title = db.Column(db.String(100), nullable=False)
-  text = db.Column(db.String(500), nullable=False)
+  title = db.Column(db.String(300), nullable=False)
+  location = db.Column(db.String(600), nullable=False)
+  types = db.Column(db.String(600), nullable=False)
 
 
 class NewsList(db.Model):
@@ -36,15 +36,15 @@ class VacancyList(db.Model):
 
 @host.route('/get_objects')
 def get_objects():
-  items = ObjectsList.query.order_by(ObjectsList.id).all()
-  items = list(map(lambda el: {'id': el.id, 'title': el.title, 'text': el.text}, items))
+  items = ObjectsList.query.all()
+  items = list(map(lambda el: {'id': el.id, 'title': el.title, 'location': el.location, 'types': el.types}, items))[::-1]
   return jsonify(items)
 
 
 @host.route('/get_news')
 def get_news():
   items = NewsList.query.order_by(NewsList.id).all()
-  items = list(map(lambda el: {'id': el.id, 'date': el.date, 'imageURL': list(map(lambda e: 'https://hosting.alexavr.ru/' + e, json.loads(el.imageURL))), 'text': el.text, 'link': el.link, 'url': el.url}, items))[::-1]
+  items = list(map(lambda el: {'id': el.id, 'date': el.date, 'imageURL': list(map(lambda e: 'https://hosting.alexavr.ru/' + e, json.loads(el.imageURL))), 'text': el.text, 'link': el.link, 'url': 'https://hosting.alexavr.ru/' + el.url if el.url else ""}, items))[::-1]
   return jsonify(items)
 
 

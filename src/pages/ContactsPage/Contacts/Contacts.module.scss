@@ -13,6 +13,10 @@
         flex-direction: column;
       }
 
+      @media (max-width: 1024px) {
+        flex-direction: column;
+      }
+
       .contactsBlockInfo {
         background-color: #ebebeb;
         padding: 20px;
@@ -41,6 +45,13 @@
         
         @media (max-width: 767px) {
           justify-content: center;
+          margin-top: 30px;
+
+        }
+
+        @media (max-width: 1024px) {
+          justify-content: center;
+          margin-top: 30px;
         }
 
         .contactBlockImage {

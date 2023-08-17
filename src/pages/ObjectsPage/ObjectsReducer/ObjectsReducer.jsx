@@ -3,7 +3,7 @@ import styles from './ObjectsReducer.module.scss';
 import axios from "axios";
 
 // compoentns
-import Object from "./Object/Object";
+import ObjectsItem from "./ObjectsItem/ObjectsItem";
 
 const ObjectsReducer = (props) => {
   const [objects, setObjects] = useState([]);
@@ -16,7 +16,7 @@ const ObjectsReducer = (props) => {
   return(
     <div className={styles.reducer}>
       {objects.filter((item) => item.title.toLowerCase().includes(props.searchValue.toLowerCase())).map(object => {
-        return <Object key={object.id} title={object.title} text={object.text} />
+        return <ObjectsItem key={object.id} title={object.title} location={object.location} types={object.types} />
       })}
     </div>
   );

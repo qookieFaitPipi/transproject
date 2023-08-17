@@ -1,4 +1,5 @@
 .reducer {
-  max-width: 95%;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

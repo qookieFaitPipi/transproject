@@ -8,13 +8,14 @@ import pointSVG from './../../../Assets/img/icons/point.svg';
 
 // images
 import contactImage from './../../../Assets/img/contact-img.jpg';
+
 const Contacts = () => {
   return(
     <div className={styles.contacts}>
       <div className={styles.contactsContent}>
         <div className={styles.contactsBlock}>
           <div className={styles.contactsBlockInfo}>
-            <h4 className={styles.contactsBlockTitle}>ООО "ТранспроектИнжиниринг"</h4>
+            <h4 className={styles.contactsBlockTitle}>ООО «ТранспроектИнжиниринг»</h4>
             <div className={styles.contactsBlockTel}>
               <img className={styles.contactsBlockIcon} src={phoneSVG} alt="" />
               <p className={styles.contactsText}>+7 (812) 948-55-99</p>

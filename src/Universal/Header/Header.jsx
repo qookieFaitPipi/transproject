@@ -38,7 +38,7 @@ const IndexHeader = () => {
             <div className={headerPopupActive ? styles.active : styles.navItemPopup}>
               <div className={styles.navItemPopupLinkBlock}>
                 <div className={styles.navItemPopupLink} onClick={() => document.getElementById('scrollWorkers').scrollIntoView({behavior: "smooth"})}>Руководство</div>
-                <div className={styles.navItemPopupLink} onClick={() => document.getElementById('scrollPartners').scrollIntoView({behavior: "smooth"})}>Наши заказчики</div>
+                <div className={styles.navItemPopupLink} onClick={() => document.getElementById('scrollPartners').scrollIntoView({behavior: "smooth"})}>Наши заказчики и партнёры</div>
                 <div className={styles.navItemPopupLink} onClick={() => document.getElementById('scrollFooter').scrollIntoView({behavior: "smooth"})}>Лицензии и допуски</div>
               </div>
             </div>

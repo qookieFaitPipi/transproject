@@ -8,12 +8,21 @@
     flex-direction: column;
   }
 
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+
   .vacancyPrice {
     display: block;
     margin-top: 35px;
     width: 50%;
 
     @media (max-width: 767px) {
+      width: 100%;
+      margin-top: 0px;
+    }
+
+    @media (max-width: 1024px) {
       width: 100%;
       margin-top: 0px;
     }
@@ -52,6 +61,10 @@
       width: 100%;
     }
 
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+
     .vacancyTitle {
       position: relative;
       margin-left: 32px;
@@ -61,6 +74,11 @@
         
       
       @media (max-width: 767px) {
+        text-align: center;
+        margin-left: 0px;
+      }
+
+      @media (max-width: 1024px) {
         text-align: center;
         margin-left: 0px;
       }
