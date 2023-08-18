@@ -10,7 +10,7 @@ Website for <a href="https://tpe.su">ООО «ТранспроектИнжини
 <img src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" title="Redux" alt="Redux " width="40" height="40"/>&nbsp;
 
 ### 🖥 &nbsp;Demo :
-<a href='https://github.com/qookieFaitPipi/transproject/assets/58183484/8e2bde35-47ae-4ab2-880e-3e8f89f2abbd'>Demo</a>
+<a href='https://github.com/qookieFaitPipi/transproject/assets/58183484/8e2bde35-47ae-4ab2-880e-3e8f89f2abbd'>Link</a>
 
 Для загрузки модулей необходимо: `yarn install`<br/>
 Для запуска frontend-части необходимо: `yarn start`<br/>
