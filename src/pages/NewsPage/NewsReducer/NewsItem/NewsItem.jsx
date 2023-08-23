@@ -6,7 +6,7 @@ const NewsItem = (props) => {
     <div className={styles.newsItem}>
       <div className={styles.newsItemImageBlock}>
         {props.imageURL.map((obj) => 
-          <img className={styles.newsItemImage} src={obj} alt="" />
+          <img className={styles.newsItemImage} src={obj} alt="image" />
         )}
       </div>
       <div className={styles.newsItemTextBlock}>

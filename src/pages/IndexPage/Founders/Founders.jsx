@@ -2,8 +2,8 @@ import React from "react";
 import styles from './Founders.module.scss';
 
 // images
-import wr1 from './../../../Assets/img/workers/wr3.jpg';
-import wr2 from './../../../Assets/img/workers/wr4.jpg';
+import wr1 from './../../../Assets/img/workers/wr1.jpg';
+import wr2 from './../../../Assets/img/workers/wr2.jpg';
 
 const Workers = () => {
   return(
@@ -36,7 +36,7 @@ const Workers = () => {
 
         <div className={styles.workersItem}>
           <div className={styles.workersItemInfo}>
-            <h4 className={styles.workersItemInfoTitle}>Заместитель генерального директора – Директор по инженерной экологии</h4>
+            <h4 className={styles.workersItemInfoTitle}>Заместитель генерального директора – Директор по инженерной экологии Савченко Андрей Владимирович</h4>
             <h4 className={styles.workersItemInfoSupTitle}>Награды</h4>
             <p className={styles.workersItemInfoText}>2014 г. – Награжден почетной грамота НП дорожных проектных организаций "РОДОС";<br/>
               2016 г. – Объявлена благодарность Комитета по развитию транспортной инфраструктуры Санкт-Петербурга.<br/>

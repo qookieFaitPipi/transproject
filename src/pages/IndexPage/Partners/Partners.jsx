@@ -21,6 +21,7 @@ import pt11 from './../../../Assets/img/partners/pt11.png';
 import pt12 from './../../../Assets/img/partners/pt12.png';
 import pt13 from './../../../Assets/img/partners/pt13.png';
 import pt14 from './../../../Assets/img/partners/pt14.png';
+import pt15 from './../../../Assets/img/partners/pt15.jpg';
 
 const Partners = () => {
   const responsive = {
@@ -50,6 +51,11 @@ const Partners = () => {
         <div className={styles.partnersItem}>
           <img className={styles.partnersItemImage} width="140px" height="140px" src={pt3} alt="" />
           <div className={styles.partnersItemText}>Комитет по развитию транспортной <br/> инфраструктуры Санкт-Петербурга</div>
+        </div>
+
+        <div className={styles.partnersItem}>
+          <img className={styles.partnersItemImage} width="150px" height="150px" src={pt15} alt="" />
+          <div className={styles.partnersItemText}>СПб ГКУ "Дирекция транспортного строительства"</div>
         </div>
 
         <div className={styles.partnersItem}>
@@ -93,7 +99,6 @@ const Partners = () => {
         <div className={styles.partnersItem}>
           <img className={styles.partnersItemImage} width="150px" height="150px" src={pt11} alt="" />
           <div className={styles.partnersItemText}>Администрация Кореновского городского <br/> поселения Кореновского района</div>
-
         </div>
 
         <div className={styles.partnersItem}>
