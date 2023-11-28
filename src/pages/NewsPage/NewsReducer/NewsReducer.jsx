@@ -11,7 +11,7 @@ const NewsReducer = () => {
   const [loadingState, setLoadingState] = useState(false)
 
   useEffect(() => {
-    axios.get('https://hosting.alexavr.ru/get_news').then((response) => {
+    axios.get('https://backend.tpe.su/get_news').then((response) => {
       setNews(response.data);
       setLoadingState(true);
     });

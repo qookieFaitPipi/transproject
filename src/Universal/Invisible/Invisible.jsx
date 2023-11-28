@@ -8,4 +8,4 @@ const Invisible = () => {
   )
 }
 
-export default Invisible
+export default React.memo(Invisible);

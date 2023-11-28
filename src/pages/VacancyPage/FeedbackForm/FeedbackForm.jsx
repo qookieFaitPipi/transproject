@@ -36,7 +36,7 @@ const FeedbackForm = () => {
     formData.append('message', message)
     formData.append('file', file)
 
-    fetch('https://hosting.alexavr.ru/send_feedback', {
+    fetch('https://backend.tpe.su/send_feedback', {
       method: 'post',
       body: formData
     })

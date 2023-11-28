@@ -73,4 +73,4 @@ def send_feedback():
 
 if __name__ == "__main__":
   config = json.load(open("config.cfg"))
-  host.run(host="0.0.0.0", port=25003, debug=True)
+  host.run(host="0.0.0.0", port=1636, debug=True)

@@ -94,6 +94,7 @@
         }
 
         .navLink {
+          position: relative;
           text-decoration: none;
           color: #000;
           font-size: 19px;
@@ -126,6 +127,7 @@
           opacity: 1;
           transition: 0.3s;
           text-align:left;
+          margin-top: 10px;
 
           .navItemPopupLinkBlock {
             display: flex;

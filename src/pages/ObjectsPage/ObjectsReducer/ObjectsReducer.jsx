@@ -8,7 +8,7 @@ import ObjectsItem from "./ObjectsItem/ObjectsItem";
 const ObjectsReducer = (props) => {
   const [objects, setObjects] = useState([]);
   useEffect(() => {
-    axios.get('https://hosting.alexavr.ru/get_objects').then((response) => {
+    axios.get('https://backend.tpe.su/get_objects').then((response) => {
       setObjects(response.data)
     });
   }, []);

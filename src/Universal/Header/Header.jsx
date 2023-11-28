@@ -37,9 +37,9 @@ const IndexHeader = () => {
             <Link className={styles.navLink} to="/">О компании</Link>
             <div className={headerPopupActive ? styles.active : styles.navItemPopup}>
               <div className={styles.navItemPopupLinkBlock}>
-                <div className={styles.navItemPopupLink} onClick={() => document.getElementById('scrollWorkers').scrollIntoView({behavior: "smooth"})}>Руководство</div>
-                <div className={styles.navItemPopupLink} onClick={() => document.getElementById('scrollPartners').scrollIntoView({behavior: "smooth"})}>Наши заказчики и партнёры</div>
-                <div className={styles.navItemPopupLink} onClick={() => document.getElementById('scrollFooter').scrollIntoView({behavior: "smooth"})}>Лицензии и допуски</div>
+                <div className={styles.navItemPopupLink} onClick={() => window.scroll({top: 4150, behavior: 'smooth'})}>Руководство</div>
+                <div className={styles.navItemPopupLink} onClick={() => window.scroll({top: 5300, behavior: 'smooth'})}>Наши заказчики и партнёры</div>
+                <div className={styles.navItemPopupLink} onClick={() => window.scroll({top: 5600, behavior: 'smooth'})}>Лицензии и допуски</div>
               </div>
             </div>
           </div>

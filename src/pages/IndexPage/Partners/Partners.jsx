@@ -22,6 +22,8 @@ import pt12 from './../../../Assets/img/partners/pt12.png';
 import pt13 from './../../../Assets/img/partners/pt13.png';
 import pt14 from './../../../Assets/img/partners/pt14.png';
 import pt15 from './../../../Assets/img/partners/pt15.jpg';
+import pt16 from './../../../Assets/img/partners/pt16.jpg';
+import pt17 from './../../../Assets/img/partners/pt17.png';
 
 const Partners = () => {
   const responsive = {
@@ -49,68 +51,77 @@ const Partners = () => {
       <Carousel responsive={responsive} className={styles.partners} id='scrollPartners'>
 
         <div className={styles.partnersItem}>
-          <img className={styles.partnersItemImage} width="140px" height="140px" src={pt3} alt="" />
+          <img className={styles.partnersItemImage} width="150px" src={pt3} alt="" />
           <div className={styles.partnersItemText}>Комитет по развитию транспортной <br/> инфраструктуры Санкт-Петербурга</div>
         </div>
 
         <div className={styles.partnersItem}>
-          <img className={styles.partnersItemImage} width="150px" height="150px" src={pt15} alt="" />
+          <img className={styles.partnersItemImage} width="150px" src={pt15} alt="" />
           <div className={styles.partnersItemText}>СПб ГКУ "Дирекция транспортного строительства"</div>
         </div>
 
         <div className={styles.partnersItem}>
-          <img className={styles.partnersItemImage} width="300px" height="150px" src={pt2} alt="" />
+          <img className={styles.partnersItemImage} width="300px" src={pt2} alt="" />
         </div>
 
         <div className={styles.partnersItem}>
-          <img className={styles.partnersItemImage} width="150px" height="150px" src={pt1} alt="" />
+          <img className={styles.partnersItemImage} width="150px" src={pt1} alt="" />
           <div className={styles.partnersItemText}>Санкт-Петербургское государственное <br/> казенное учреждение «Фонд капитального <br/>строительства и реконструкции»</div>
         </div>
 
         <div className={styles.partnersItem}>
-          <img className={styles.partnersItemImage} width="400px" height="150px" src={pt4} alt="" />
+          <img className={styles.partnersItemImage} width="400px" src={pt4} alt="" />
         </div>
 
         <div className={styles.partnersItem}>
-          <img className={styles.partnersItemImage} width="300px" height="150px" src={pt5} alt="" />
+          <img className={styles.partnersItemImage} width="300px" src={pt5} alt="" />
         </div>
         <div className={styles.partnersItem}>
-          <img className={styles.partnersItemImage} width="150px" height="150px" src={pt6} alt="" />
-        </div>
-
-        <div className={styles.partnersItem}>
-          <img className={styles.partnersItemImage} width="150px" height="50px" src={pt7} alt="" />
+          <img className={styles.partnersItemImage} width="150px" src={pt6} alt="" />
         </div>
 
         <div className={styles.partnersItem}>
-          <img className={styles.partnersItemImage} width="150px" height="150px" src={pt8} alt="" />
+          <img className={styles.partnersItemImage} width="150px" src={pt7} alt="" />
+        </div>
+
+        <div className={styles.partnersItem}>
+          <img className={styles.partnersItemImage} width="150px" src={pt8} alt="" />
           <div className={styles.partnersItemText}>Администрация Белоярского <br/> района</div>
         </div>
 
         <div className={styles.partnersItem}>
-          <img className={styles.partnersItemImage} width="300px" height="150px" src={pt9} alt="" />
+          <img className={styles.partnersItemImage} width="350px" src={pt9} alt="" />
         </div>
 
         <div className={styles.partnersItem}>
-          <img className={styles.partnersItemImage} width="150px" height="150px" src={pt10} alt="" />
+          <img className={styles.partnersItemImage} width="160px" height='185px' src={pt10} alt="" />
           <div className={styles.partnersItemText}>Администрация Ершовского муниципального <br/> района Саратовской области</div>
         </div>
 
         <div className={styles.partnersItem}>
-          <img className={styles.partnersItemImage} width="150px" height="150px" src={pt11} alt="" />
+          <img className={styles.partnersItemImage} width="150px" src={pt11} alt="" />
           <div className={styles.partnersItemText}>Администрация Кореновского городского <br/> поселения Кореновского района</div>
         </div>
 
         <div className={styles.partnersItem}>
-          <img className={styles.partnersItemImage} width="250px" height="150px" src={pt12} alt="" />
+          <img className={styles.partnersItemImage} width="250px" src={pt12} alt="" />
         </div>
 
         <div className={styles.partnersItem}>
-          <img className={styles.partnersItemImage} width="300px" height="120px" src={pt13} alt="" />
+          <img className={styles.partnersItemImage} width="300px" src={pt13} alt="" />
         </div>
 
         <div className={styles.partnersItem}>
-          <img className={styles.partnersItemImage} width="250px" height="150px" src={pt14} alt="" />
+          <img className={styles.partnersItemImage} width="250px" src={pt14} alt="" />
+        </div>
+
+        <div className={styles.partnersItem}>
+          <img className={styles.partnersItemImage} width="150px" src={pt16} alt="" />
+          <div className={styles.partnersItemText}>ООО «ПСК «СИТИ-Инжиниринг»</div>
+        </div>
+
+        <div className={styles.partnersItem}>
+          <img className={styles.partnersItemImage} width="150px" src={pt17} alt="" />
         </div>
       </Carousel>
     </>

@@ -8,7 +8,7 @@ import Vacancy from './Vacancy/Vacancy';
 const VacancyReducer = () => {
   const [vacancy, setVacancy] = useState([]);
   useEffect(() => {
-    axios.get('https://hosting.alexavr.ru/get_vacancy').then((response) => {
+    axios.get('https://backend.tpe.su/get_vacancy').then((response) => {
       setVacancy(response.data);
       console.log(response.data);
     });
