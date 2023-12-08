@@ -1,0 +1,63 @@
+.controlContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 95%;
+  margin: auto;
+  margin-top: 30px;
+
+  @media (max-width: 767px) {
+    justify-content: center;
+    margin-right: 0px;
+  }
+
+  .controlSortBlock {
+    position: relative;
+    padding: 10px;
+
+
+    .controlSortContent {
+      display: flex;
+
+      .controlSortTitle {
+        font-size: 16px;
+      }
+  
+      .controlSortText {
+        font-size: 16px;
+        margin-left: 10px;
+        cursor: pointer;
+        border-bottom: 1px #ccc solid;
+      }
+  
+    }
+
+    .controlSortPopup {
+      display: block;
+      position: absolute;
+      top: 30px;
+      background-color: #fff;
+      border: 1px #ebebeb solid;
+      border-radius: 10px;
+      padding: 15px;
+
+      .controlSortItm {
+        cursor: pointer;
+        margin-top: 8px;
+        transition: 0.3s;
+      }
+      .controlSortItm:hover {
+        color: #FE5F1E;
+      }
+    }
+  }
+
+  .controlSearchInput {
+    width: 300px;
+    height: 45px;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #808080;
+    font-size: 16px;
+  }
+}

@@ -71,6 +71,18 @@ def send_feedback():
     return jsonify({"is_send": False})
 
 
+@host.route('/sort_by_param/<int:id>', methods=['POST'])
+def sort_by_param(id):
+  if id == 1:
+    items = ObjectsList.query.order_by(ObjectsList.title).all()
+    items = list(map(lambda el: {'id': el.id, 'title': el.title, 'location': el.location, 'types': el.types}, items))
+    return jsonify(items)
+  elif id == 2:
+    items = ObjectsList.query.order_by(ObjectsList.id).all()
+    items = list(map(lambda el: {'id': el.id, 'title': el.title, 'location': el.location, 'types': el.types}, items))[::-1]
+    return jsonify(items)
+  
+
 if __name__ == "__main__":
   config = json.load(open("config.cfg"))
   host.run(host="0.0.0.0", port=1636, debug=True)
