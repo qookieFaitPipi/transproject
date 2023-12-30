@@ -10,5 +10,13 @@
   .objectsContent {
     display: flex;
     justify-content: center;
+
+    .map {
+      height: 520px;
+
+      @media (max-width: 767px) {
+        height: 320px;
+      }
+    }
   }
 }

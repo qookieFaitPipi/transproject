@@ -4,6 +4,7 @@ import styles from './Founders.module.scss';
 // images
 import wr1 from './../../../Assets/img/workers/wr1.jpg';
 import wr2 from './../../../Assets/img/workers/wr2.jpg';
+import wr3 from './../../../Assets/img/workers/wr3.jpeg';
 
 const Workers = () => {
   return(
@@ -38,13 +39,13 @@ const Workers = () => {
           <div className={styles.workersItemInfo}>
             <h4 className={styles.workersItemInfoTitle}>Заместитель генерального директора – Директор по инженерной экологии<br />Савченко Андрей Владимирович</h4>
             <h4 className={styles.workersItemInfoSupTitle}>Награды</h4>
-            <p className={styles.workersItemInfoText}>2014 г. – Награжден почетной грамота НП дорожных проектных организаций "РОДОС";<br/>
+            <p className={styles.workersItemInfoText}>2014 г. – Награжден почетной грамотой НП дорожных проектных организаций «РОДОС»<br/>
               2016 г. – Объявлена благодарность Комитета по развитию транспортной инфраструктуры Санкт-Петербурга.<br/>
               2018 г. – Благодарственное письмо Департамента транспорта и дорожно-благоустроительного комплекса <br/> мэрии города Новосибирска «За высокий профессионализм и значительный вклад в развитие дорожно-строительного комплекса города Новосибирска».
             </p>
           </div>
           <div className={styles.workersItemImageBlock}>
-            <img className={styles.workersItemImage} style={{borderRadius: '0px 20px 20px 0px'}} src={wr2} alt="" />
+            <img className={styles.workersItemImage} style={{borderRadius: '0px 20px 20px 0px'}} src={wr3} alt="" />
           </div>
         </div>
 

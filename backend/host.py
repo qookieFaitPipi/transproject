@@ -44,7 +44,7 @@ def get_objects():
 @host.route('/get_news')
 def get_news():
   items = NewsList.query.order_by(NewsList.id).all()
-  items = list(map(lambda el: {'id': el.id, 'date': el.date, 'imageURL': list(map(lambda e: 'https://hosting.alexavr.ru/' + e, json.loads(el.imageURL))), 'text': el.text, 'link': el.link, 'url': 'https://hosting.alexavr.ru/' + el.url if el.url else ""}, items))[::-1]
+  items = list(map(lambda el: {'id': el.id, 'date': el.date, 'imageURL': list(map(lambda e: 'https://backend.tpe.su/' + e, json.loads(el.imageURL))), 'text': el.text, 'link': el.link, 'url': 'https://backend.tpe.su/' + el.url if el.url else ""}, items))[::-1]
   return jsonify(items)
 
 
@@ -81,7 +81,13 @@ def sort_by_param(id):
     items = ObjectsList.query.order_by(ObjectsList.id).all()
     items = list(map(lambda el: {'id': el.id, 'title': el.title, 'location': el.location, 'types': el.types}, items))[::-1]
     return jsonify(items)
-  
+
+
+@host.route('/get_cookie/<string>')
+def get_cookie(string):
+  print(string)
+  return string
+
 
 if __name__ == "__main__":
   config = json.load(open("config.cfg"))

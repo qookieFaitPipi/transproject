@@ -9,12 +9,16 @@
   @media (max-width: 767px) {
     justify-content: center;
     margin-right: 0px;
+    flex-direction: column;
   }
 
   .controlSortBlock {
     position: relative;
     padding: 10px;
 
+    @media (max-width: 767px) {
+      flex: 0;
+    }
 
     .controlSortContent {
       display: flex;
