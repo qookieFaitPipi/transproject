@@ -4,7 +4,7 @@ import React, {useEffect} from "react";
 import Header from "../../Universal/Header/Header";
 import Invisible from "../../Universal/Invisible/Invisible";
 import VacancyReducer from "./VacancyReducer/VacancyReducer";
-import FeedbackForm from "./FeedbackForm/FeedbackForm";
+import Feedback from "./Feedback/Feedback";
 import Footer from "../../Universal/Footer/Footer";
 
 const VacancyPage = () => {
@@ -17,7 +17,7 @@ const VacancyPage = () => {
       <Header />
       <Invisible />
       <VacancyReducer />
-      <FeedbackForm />
+      <Feedback />
       <Footer />
     </section>
   );

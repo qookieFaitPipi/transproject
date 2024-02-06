@@ -18,15 +18,17 @@ const VacancyReducer = () => {
     <div className={styles.reducer}>
       <div className={styles.reducerContent}>
         {vacancy.map(obj => {
-          return <Vacancy 
-            key={obj.id} 
-            id={obj.id}
-            title={obj.title}
-            price={obj.price} 
-            duties={obj.duties} 
-            requirements={obj.requirements} 
-            conditions={obj.conditions} 
-          />
+          if(obj.active === 1) {
+            return <Vacancy 
+              key={obj.id} 
+              id={obj.id}
+              title={obj.title}
+              price={obj.price} 
+              duties={obj.duties} 
+              requirements={obj.requirements} 
+              conditions={obj.conditions} 
+            />    
+          }
         })}
       </div>
     </div>

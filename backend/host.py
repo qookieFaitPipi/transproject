@@ -15,7 +15,6 @@ class ObjectsList(db.Model):
   location = db.Column(db.String(600), nullable=False)
   types = db.Column(db.String(600), nullable=False)
 
-
 class NewsList(db.Model):
   id = db.Column(db.Integer, primary_key=True)
   date = db.Column(db.String(100), nullable=False)
@@ -24,6 +23,13 @@ class NewsList(db.Model):
   link = db.Column(db.String(100), nullable=True)
   url = db.Column(db.String(100), nullable=True)
 
+class ECINewsList(db.Model):
+  id = db.Column(db.Integer, primary_key=True)
+  date = db.Column(db.String(100), nullable=False)
+  imageURL = db.Column(db.String(100), nullable=False)
+  text = db.Column(db.String(2000), nullable=False)
+  link = db.Column(db.String(100), nullable=True)
+  url = db.Column(db.String(100), nullable=True)
 
 class VacancyList(db.Model):
   id = db.Column(db.Integer, primary_key=True)
@@ -32,6 +38,7 @@ class VacancyList(db.Model):
   duties = db.Column(db.String(600), nullable=False)
   requirements = db.Column(db.String(600), nullable=False)
   conditions = db.Column(db.String(600), nullable=False)
+  active = db.Column(db.Integer)
 
 
 @host.route('/get_objects')
@@ -51,7 +58,7 @@ def get_news():
 @host.route('/get_vacancy')
 def get_vacancy():
   items = VacancyList.query.all()
-  items = list(map(lambda el: {'id': el.id, 'title': el.title, 'price': el.price, 'duties': json.loads(el.duties), 'requirements': json.loads(el.requirements), 'conditions': json.loads(el.conditions)}, items))
+  items = list(map(lambda el: {'id': el.id, 'title': el.title, 'price': el.price, 'duties': json.loads(el.duties), 'requirements': json.loads(el.requirements), 'conditions': json.loads(el.conditions), 'active': el.active}, items))
   return jsonify(items)
 
 
@@ -83,10 +90,17 @@ def sort_by_param(id):
     return jsonify(items)
 
 
-@host.route('/get_cookie/<string>')
+@host.route('/get_eci_news')
+def get_eci_news():
+  items = ECINewsList.query.order_by(ECINewsList.id).all()
+  items = list(map(lambda el: {'id': el.id, 'date': el.date, 'imageURL': 'https://backend.tpe.su/' + el.imageURL, 'text': el.text, 'link': el.link, 'url': 'https://backend.tpe.su/' + el.url if el.url else ""}, items))[::-1]
+  return jsonify(items)
+
+
+@host.route('/get_string/<string>')
 def get_cookie(string):
   print(string)
-  return string
+  return 0
 
 
 if __name__ == "__main__":

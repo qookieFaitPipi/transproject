@@ -1,0 +1,175 @@
+@import './../../../index.scss';
+
+.feedback {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    display: inline-flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px #ebebeb solid;
+    border-radius: 10px;
+    padding: 20px;
+    width: 1200px;
+
+    @media (max-width: 767px) {
+      width: auto;
+    }
+
+    .title {
+      text-align: center;
+      font-size: $DesktopTitleSize;
+      margin-bottom: $DesktopTitleMargin;
+
+      @media (max-width: 767px) {
+        font-size: $MobileTitleSize;
+      }
+    }
+
+    .forms {
+      display: inline-flex;
+
+      @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .leftBlock {
+        margin-right: 20px;
+        text-align: start;
+
+        @media (max-width: 767px) {
+          margin-right: 0px;
+        }
+  
+        .feedbackNameBlock {
+          display: flex;
+          flex-direction: column;
+          margin-top: 20px;
+    
+          .feedbackNameLabel {
+            color: #808080;
+          }
+          .feedbackNameInput {
+            height: 40px;
+            width: 500px;
+            border-radius: 10px;
+            outline: none;
+            border: 1px #808080 solid;
+    
+            @media (max-width: 767px) {
+              width: 350px;
+            }
+          }
+        }
+        .feedbackSelectInput {
+          height: 40px;
+          width: 500px;
+          border-radius: 10px;
+          outline: none;
+          border: 1px #808080 solid;
+    
+          @media (max-width: 767px) {
+            width: 350px;
+          }
+        }
+      }
+    }
+    .rightBlock {
+      margin-left: 20px;
+      text-align: start;
+
+      @media (max-width: 767px) {
+        margin-left: 0px;
+        margin-top: 20px;
+      }
+
+      .feedbackNameBlock {
+        display: flex;
+        flex-direction: column;
+  
+        .feedbackNameLabel {
+          color: #808080;
+        }
+        .feedbackNameInput {
+          height: 40px;
+          width: 500px;
+          border-radius: 10px;
+          outline: none;
+          border: 1px #808080 solid;
+  
+          @media (max-width: 767px) {
+            width: 350px;
+          }
+        }
+      }
+
+      .feedbackMessageInput {
+        height: 200px;
+        width: 500px;
+        border-radius: 10px;
+        outline: none;
+        border: 1px #808080 solid;
+  
+        @media (max-width: 767px) {
+          width: 350px;
+        }
+      }
+  
+      .feedbackFileInput {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+      }
+    }
+
+    .feedbackCheckBoxBlock {
+      display: flex;
+      width: 100%;
+      margin-top: 30px;
+      align-items: center;
+
+      @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .feedbackCheckBoxInput {
+        margin-right: 10px;
+        width: 80px;
+        height: 80px;
+
+        @media (max-width: 767px) {
+          width: 40px;
+          height: 40px;
+        }
+      }
+  
+      .feedbackCheckBoxText {
+        text-align: start;
+      }
+    }
+  
+    .feedbackContinueBlock {
+      margin-top: 20px;
+  
+      .feedbackContinueInput {
+        height: 40px;
+        width: 200px;
+        border-radius: 10px;
+        outline: none;
+        border: 1px #808080 solid;
+      }
+  
+      .feedbackContinueInput:hover {
+        background-color: #44944A;
+        color: #fff;
+        transition: 0.5s;
+      }
+    }
+  }
+}
